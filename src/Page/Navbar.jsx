@@ -19,7 +19,7 @@ const Navbar = () => {
         })
   },[])
   return (
-    <header className='bg-black text-base font-sans'>
+    <header className='bg-dark text-base font-sans'>
      <div className='container mx-auto'>
       <div className='flex justify-between items-center py-3'>
         <Link to={'/'} >
@@ -27,7 +27,7 @@ const Navbar = () => {
         </Link>
         <nav className='navbar flex flex-wrap relative items-center justify-between'>
           <ul className='flex gap-12 font-base text-gray'>
-            <li className='active:text-white'>
+            <li className=''>
               <NavLink to={'/'} aria-current="page" className="transition duration-300">Home</NavLink>
             </li>
             <li>
@@ -41,7 +41,7 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
-        <Link to={'contact'} className='text-white px-7 py-2 rounded-xl font-medium bg-dark'>
+        <Link to={'contact'} className='text-white px-7 py-2 rounded-xl font-medium bg-gray-dark'>
           Let's talk
         </Link>
       </div>

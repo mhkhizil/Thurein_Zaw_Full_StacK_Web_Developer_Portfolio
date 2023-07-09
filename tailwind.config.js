@@ -5,6 +5,26 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      'uxsm': '400px',
+      'xsm': '586px',
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+      'slg': '920px',
+      // => @media (min-width: 1024px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1537px',
+      // => @media (min-width: 1537px) { ... }
+    },
     extend: {
       colors:{
         blue: "#0d6efd",
@@ -28,6 +48,12 @@ export default {
         danger:" #dc3545",
         light: "#f8f9fa",
         dark: "#212529",
+        'card-bg': '#0f0f0f',
+        'card-para': '#bcbcbc'
+      },
+      backgroundImage: {
+        'home-gradient': 'linear-gradient(90deg,#5b78f6 -15%, #C2EBFF 58%, #5b78f6 97%)',
+        'card-background': 'linear-gradient(120deg, rgba(255,255,255,0.3), rgba(255,255,255,0.05))'
       }
     },
   },

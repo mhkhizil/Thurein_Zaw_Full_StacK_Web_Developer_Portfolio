@@ -21,13 +21,14 @@ const Navbar = () => {
   return (
     <header className='bg-black text-base font-sans z-40'>
      <div className='container mx-auto  px-[4.5rem]'>
+
       <div className='flex justify-between items-center py-3'>
         <Link to={'/'} >
             <img src={logo} alt="" />
         </Link>
         <nav className='navbar flex flex-wrap relative items-center justify-between'>
           <ul className='flex gap-12 font-base text-gray'>
-            <li className='active:text-white'>
+            <li className=''>
               <NavLink to={'/'} aria-current="page" className="transition duration-300">Home</NavLink>
             </li>
             <li>
@@ -41,7 +42,7 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
-        <Link to={'contact'} className='text-white px-7 py-2 rounded-xl font-medium bg-dark'>
+        <Link to={'contact'} className='text-white px-7 py-2 rounded-xl font-medium bg-gray-dark'>
           Let's talk
         </Link>
       </div>

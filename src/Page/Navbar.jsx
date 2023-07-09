@@ -19,8 +19,9 @@ const Navbar = () => {
         })
   },[])
   return (
-    <header className='bg-dark text-base font-sans'>
-     <div className='container mx-auto'>
+    <header className='bg-black text-base font-sans z-40'>
+     <div className='container mx-auto  px-[4.5rem]'>
+
       <div className='flex justify-between items-center py-3'>
         <Link to={'/'} >
             <img src={logo} alt="" />

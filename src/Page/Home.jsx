@@ -126,7 +126,7 @@ const Home = () => {
                   duration: 0.8,
                   delay: loader ? 0.5 : 0,
                 }}
-                className="md:basis-1/2 basis-full border border-[rgba(255,255,255,0.1)] bg-card-bg px-8 py-6 rounded-3xl group relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-3xl after:opacity-[.25]"
+                className="md:basis-1/2 basis-full border cursor-pointer border-[rgba(255,255,255,0.1)] bg-card-bg px-8 py-6 rounded-3xl group relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-3xl after:opacity-[.25]"
               >
                 <div className="">
                   <img src={sign} alt="" className="block" />
@@ -157,7 +157,7 @@ const Home = () => {
                   duration: 0.8,
                   delay: loader ? 0.5 : 0,
                 }}
-                className="md:basis-1/2 basis-full border border-[rgba(255,255,255,0.1)] bg-card-bg px-8 py-6 rounded-3xl group relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-3xl after:opacity-[.25]"
+                className="md:basis-1/2 basis-full cursor-pointer border border-[rgba(255,255,255,0.1)] bg-card-bg px-8 py-6 rounded-3xl group relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-3xl after:opacity-[.25]"
               >
                 <div className="">
                   <img src={work} alt="" className="block" />
@@ -217,14 +217,14 @@ const Home = () => {
               duration: 0.8,
               delay: loader ? 0.5 : 0,
             }}
-            className="lg:basis-1/4 md:basis-[48%] basis-full border border-[rgba(255,255,255,0.1)] bg-card-bg group flex flex-col justify-between  rounded-[1.75rem] p-8 relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[2rem] after:opacity-[.25]"
+            className="lg:basis-1/4 md:basis-[48%] basis-full border border-[rgba(255,255,255,0.1)] bg-card-bg group flex flex-col justify-between cursor-pointer  rounded-[1.75rem] p-8 relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[2rem] after:opacity-[.25]"
           >
             <div className="">
               <img src={gFont} alt="" />
             </div>
             <div className="flex items-end justify-between">
               <div className="">
-                <h4 className="uppercase text-[.8rem] text-card-para font-medium">
+                <h4 className="uppercase text-[.8rem] text-card-para font-medium opacity-50">
                   blog
                 </h4>
                 <h1 className="text-white text-xl font-medium">GFonts</h1>
@@ -246,7 +246,7 @@ const Home = () => {
               duration: 0.8,
               delay: loader ? 0.5 : 0,
             }}
-            className="lg:basis-2/4 border border-[rgba(255,255,255,0.1)] md:basis-[48%] basis-full bg-card-bg group flex flex-col justify-end p-8 group rounded-[1.75rem] relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[2rem] after:opacity-[.25]"
+            className="lg:basis-2/4 cursor-pointer border border-[rgba(255,255,255,0.1)] md:basis-[48%] basis-full bg-card-bg group flex flex-col justify-end p-8 group rounded-[1.75rem] relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[2rem] after:opacity-[.25]"
           >
             <div className="flex items-center justify-between text-center flex-1 mb-8">
               <span className="basis-1/4">
@@ -264,10 +264,10 @@ const Home = () => {
             </div>
             <div className="flex items-end justify-between mt-auto">
               <div className="">
-                <h4 className="uppercase text-[.8rem] text-card-para font-medium">
-                  blog
+                <h4 className="uppercase text-[.8rem] text-card-para font-medium opacity-50">
+                  specialization
                 </h4>
-                <h1 className="text-white text-xl font-medium">GFonts</h1>
+                <h1 className="text-white text-xl font-medium capitalize">services offering</h1>
               </div>
               <div className="">
                 <img
@@ -286,7 +286,7 @@ const Home = () => {
               duration: 0.8,
               delay: loader ? 0.5 : 0,
             }}
-            className="lg:basis-1/4 border border-[rgba(255,255,255,0.1)] basis-full bg-card-bg p-6 flex flex-col justify-end  z-10  rounded-[1.75rem] relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[2rem] after:opacity-[.25]"
+            className="lg:basis-1/4 border border-[rgba(255,255,255,0.1)] cursor-pointer group basis-full bg-card-bg p-6 flex flex-col justify-end  z-10  rounded-[1.75rem] relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[2rem] after:opacity-[.25]"
           >
             <div className="bg-card-bg border border-[rgba(255,255,255,0.1)] rounded-3xl flex items-center justify-center gap-4 px-4 py-4 relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-3xl after:opacity-[.1]">
               <span className=" border border-[rgba(255,255,255,0.1)] px-5 py-5 rounded-full relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-full after:opacity-[.1]">
@@ -298,7 +298,7 @@ const Home = () => {
             </div>
             <div className="flex items-end justify-between mt-auto">
               <div className="mt-4">
-                <h4 className="uppercase text-[.8rem] text-card-para font-medium">
+                <h4 className="uppercase text-[.8rem] text-card-para font-medium opacity-50">
                   stay with me
                 </h4>
                 <h1 className="text-white text-xl font-medium mt-1">Profile</h1>
@@ -323,30 +323,30 @@ const Home = () => {
               duration: 0.8,
               delay: loader ? 0.5 : 0,
             }}
-            className="lg:basis-1/2 basis-full border border-[rgba(255,255,255,0.1)] bg-card-bg flex items-center justify-center sm:justify-between flex-wrap xsm:flex-nowrap gap-8 p-8  rounded-[2rem] relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[2rem] after:opacity-[.25]"
+            className="lg:basis-1/2 cursor-pointer basis-full border border-[rgba(255,255,255,0.1)] bg-card-bg flex items-center justify-center sm:justify-between flex-wrap xsm:flex-nowrap gap-8 p-8  rounded-[2rem] relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[2rem] after:opacity-[.25]"
           >
-            <div className="basis-full uxsm:basis-[44.5%] xsm:basis-1/3 bg-card-bg  py-14 relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-3xl after:opacity-[.1]">
+            <div className="basis-full uxsm:basis-[44.5%] xsm:basis-1/3 bg-card-bg  py-10 relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-3xl after:opacity-[.1]">
               <h1 className="text-white text-4xl font-medium text-center ">
                 07
               </h1>
-              <p className="uppercase text-xs text-card-para font-medium  mx-auto text-center opacity-50 w-1/2">
+              <p className="uppercase text-[.8rem] text-card-para font-normal  tracking-normal  mx-auto text-center opacity-50 w-1/2 mt-4">
                 years experience
               </p>
             </div>
-            <div className="basis-full uxsm:basis-[44.5%] xsm:basis-1/3  bg-card-bg  py-14 relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-3xl after:opacity-[.1]">
+            <div className="basis-full uxsm:basis-[44.5%] xsm:basis-1/3 bg-card-bg  py-10 relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-3xl after:opacity-[.1]">
               <h1 className="text-white text-4xl font-medium text-center ">
-                07
+                +125
               </h1>
-              <p className="uppercase text-xs text-card-para font-medium  mx-auto text-center opacity-50 w-1/2">
-                years experience
+              <p className="uppercase text-[.8rem] text-card-para font-normal  tracking-normal  mx-auto text-center opacity-50 w-1/2 mt-4">
+                clients worldwide
               </p>
             </div>
-            <div className="basis-full uxsm:basis-[44.5%] xsm:basis-1/3 bg-card-bg  py-14 relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-3xl after:opacity-[.1]">
+            <div className="basis-full uxsm:basis-[44.5%] xsm:basis-1/3 bg-card-bg  py-10 relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-3xl after:opacity-[.1]">
               <h1 className="text-white text-4xl font-medium text-center ">
-                07
+                +210
               </h1>
-              <p className="uppercase text-xs text-card-para font-medium  mx-auto text-center opacity-50 w-1/2">
-                years experience
+              <p className="uppercase text-[.8rem] text-card-para font-normal  tracking-normal  mx-auto text-center opacity-50 w-1/2 mt-4">
+                total projects
               </p>
             </div>
           </motion.div>
@@ -358,7 +358,7 @@ const Home = () => {
               duration: 0.8,
               delay: loader ? 0.5 : 0,
             }}
-            className="lg:basis-1/2 border border-[rgba(255,255,255,0.1)] basis-full bg-card-bg group  px-8 flex flex-col justify-between pb-12 rounded-[2rem] relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[2rem] after:opacity-[.25]"
+            className="lg:basis-1/2 cursor-pointer border border-[rgba(255,255,255,0.1)] basis-full bg-card-bg group  px-8 flex flex-col justify-between pb-12 rounded-[2rem] relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[2rem] after:opacity-[.25]"
           >
             <div className="">
               <img src={icon2} alt="" />

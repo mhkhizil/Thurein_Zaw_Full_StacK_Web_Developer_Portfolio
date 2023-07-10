@@ -94,7 +94,7 @@ const About = () => {
                   duration: 0.8,
                   delay: loader ? 0.5 : 0,
                 }}
-                className="box p-7 rounded-4xl relative bg-card-bg">
+                className="box p-7 rounded-4xl bg-card-bg">
                 <img src={bg} alt="background image" className='absolute top-0 left-0 w-full h-full object-cover opacity-10' />
                 <h3 className='mb-8 uppercase text-white font-medium text-base '>Experience</h3>
                 <ul className='text-base font-medium'>
@@ -118,7 +118,7 @@ const About = () => {
                   duration: 0.8,
                   delay: loader ? 0.5 : 0
                 }}
-                className="box p-7 rounded-4xl relative bg-card-bg">
+                className="box p-7 rounded-4xl bg-card-bg">
                 <img src={bg} alt="background image" className='absolute top-0 left-0 w-full h-full object-cover opacity-10' />
                 <h3 className='mb-8 uppercase text-white font-medium text-base '>Education</h3>
                 <ul className='text-base font-medium'>
@@ -170,9 +170,9 @@ const About = () => {
                 viewport={{once : true}}
                 transition={{
                   duration: 0.8,
-                  delay: loader ? 0.8 : 0
+                  delay: loader ? 0.5 : 0
                 }}
-                className="box pt-25 pb-10.5 px-5 relative col-span-1 lg:col-span-2 bg-card-bg rounded-4xl">
+                className="box pt-25 pb-10.5 px-5 col-span-1 lg:col-span-2 bg-card-bg rounded-4xl">
               <img src={bg} alt="background image" className='absolute top-0 w-full left-0 object-cover mb-4 opacity-10' />
               <img src={icon2} alt="" className='absolute top-0' />
               <div className='flex justify-between items-end'>
@@ -194,9 +194,9 @@ const About = () => {
                 viewport={{once : true}}
                 transition={{
                   duration:  0.8,
-                  delay: loader ? 0.8 : 0
+                  delay: loader ? 0.5 : 0
                 }}
-                className="box p-5 relative rounded-4xl bg-card-bg md:col-span-3 lg:col-span-1">
+                className="box p-5 rounded-4xl bg-card-bg md:col-span-3 lg:col-span-1">
               <img src={bg} alt="background image" className='absolute top-0 left-0 w-full object-cover mb-4 opacity-10' />
               <img src={sign} alt="sign image" className='mb-4 object-cover w-[75%] lg:max-w-none px-5' />
               <div className="flex justify-between items-center">

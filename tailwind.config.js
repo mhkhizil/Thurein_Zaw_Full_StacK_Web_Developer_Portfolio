@@ -5,10 +5,31 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily:{
-      'Inter' : ['Inter', 'sans-serif']
-    },
+ 
     extend: {
+      fontFamily:{
+        'Inter' : ['Inter', 'sans-serif']
+      },
+      borderRadius:{
+        'xl' : '16px',
+        '4xl' : '30px',
+      },
+      fontSize: {
+        '2xl' : '25px',
+        '4xl' : ['44px',{
+          lineHeight : '52px'
+        }],
+        '5xl' : ['54px',{
+          lineHeight : '1.2',
+        }]
+      },
+      padding: {
+        '7' : '30px',
+        '10.5' : '42px',
+        '15' : '60px',
+        '25' : '105px',
+        '33' : '115px'
+      },
       colors:{
         blue: "#0d6efd",
         indigo: "#6610f2",
@@ -31,6 +52,9 @@ export default {
         danger:" #dc3545",
         light: "#f8f9fa",
         dark: "#212529",
+        'card-bg': "#0f0f0f",
+        'card-para': '#bcbcbc'
+
       }
     },
   },

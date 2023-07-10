@@ -19,6 +19,7 @@ const Navbar = () => {
         })
   },[])
   return (
+
     <header className='bg-black text-base font-sans z-40'>
      <div className='container mx-auto  px-[4.5rem]'>
 
@@ -27,7 +28,7 @@ const Navbar = () => {
             <img src={logo} alt="" />
         </Link>
         <nav className='navbar flex flex-wrap relative items-center justify-between'>
-          <ul className='flex gap-12 font-base text-gray'>
+          <ul className='flex gap-12 text-gray'>
             <li className=''>
               <NavLink to={'/'} aria-current="page" className="transition duration-300">Home</NavLink>
             </li>

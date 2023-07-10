@@ -1,3 +1,6 @@
+
+import React from 'react'
+import { Link } from 'react-router-dom'
 import me from "../../Img/Home/me.png";
 import sign from "../../Img/Home/sign.png";
 import icon from "../../Img/Home/icon.svg";
@@ -382,5 +385,6 @@ const Home = () => {
     </>
   );
 };
+
 
 export default Home;

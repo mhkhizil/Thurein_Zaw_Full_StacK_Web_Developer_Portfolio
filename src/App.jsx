@@ -6,6 +6,7 @@ import Contact from "./Page/Contact"
 import Navbar from './Page/Navbar'
 import Footer from './Page/Footer'
 import Loader from './Page/Loader'
+import Offering from './Offering'
 
 const  App = () => {
 
@@ -18,6 +19,7 @@ const  App = () => {
       <Route path='about' element={<About/>}/>
       <Route path='work' element={<Work />} />
       <Route path='contact' element={<Contact/>}/>
+      <Route path='offering' element={<Offering/>}/>
     </Routes>
     {/* <Footer/> */}
     </div>

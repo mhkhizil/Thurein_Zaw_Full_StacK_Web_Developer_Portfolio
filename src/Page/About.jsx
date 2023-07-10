@@ -142,7 +142,7 @@ const About = () => {
                 viewport={{once : true}}
                 transition={{
                   duration  : 0.8,
-                  delay : loader ? 0.5 : 0
+                  delay : loader ? 0.3 : 0
                 }}
                 className=" box bg-card-bg p-5 rounded-4xl ">
                   <img src={bg} alt="background image" className='absolute top-0 left-0 object-cover mb-4 opacity-10' />
@@ -170,7 +170,7 @@ const About = () => {
                 viewport={{once : true}}
                 transition={{
                   duration: 0.8,
-                  delay: loader ? 0.5 : 0
+                  delay: loader ? 0.3 : 0
                 }}
                 className="box pt-25 pb-10.5 px-5 col-span-1 lg:col-span-2 bg-card-bg rounded-4xl">
               <img src={bg} alt="background image" className='absolute top-0 w-full left-0 object-cover mb-4 opacity-10' />
@@ -194,7 +194,7 @@ const About = () => {
                 viewport={{once : true}}
                 transition={{
                   duration:  0.8,
-                  delay: loader ? 0.5 : 0
+                  delay: loader ? 0.3 : 0
                 }}
                 className="box p-5 rounded-4xl bg-card-bg md:col-span-3 lg:col-span-1">
               <img src={bg} alt="background image" className='absolute top-0 left-0 w-full object-cover mb-4 opacity-10' />

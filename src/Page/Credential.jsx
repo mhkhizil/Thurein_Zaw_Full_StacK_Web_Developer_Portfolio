@@ -28,10 +28,10 @@ const Credential = () => {
           duration: 0.8,
           delay: 0.5,
         }}
-        className="xl:container xl:mx-auto min-h-screen px-[1rem] md:px-[2rem]  xl:px-[4.5rem]  pb-20 flex items-start justify-between gap-12 mt-14"
+        className="xl:container xl:mx-auto min-h-screen px-[1rem] md:px-[2rem]  xl:px-[4.5rem]  pb-20 flex flex-col md:flex-row items-start justify-between gap-12 mt-14"
       >
         
-        <div className="basis-1/3 bg-card-bg rounded-3xl px-6 py-6 sticky top-[10%]  after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[2rem] after:opacity-[.25] z-10">
+        <div className="basis-1/3 bg-card-bg rounded-3xl px-6 py-6 relative mx-auto md:mx-0 md:sticky md:top-[10%]  after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[2rem] after:opacity-[.25] z-10">
           <div className="   bg-home-gradient rounded-3xl overflow-hidden z-50">
             <img src={me} className="block  sm:w-full sm:h-full" alt="" />
           </div>

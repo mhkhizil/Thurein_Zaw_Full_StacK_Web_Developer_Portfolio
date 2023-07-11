@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 import me from "../../Img/Home/me.png";
 import sign from "../../Img/Home/sign.png";
 import icon from "../../Img/Home/icon.svg";
@@ -264,7 +264,7 @@ const Home = () => {
                 <MdOutlineDeveloperMode className="text-white text-[2.45rem] font-thin  mx-auto" />
               </span>
             </div>
-            <div className="flex items-end justify-between mt-auto">
+            <div className="flex items-end justify-between mt-auto ">
               <div className="">
                 <h4 className="uppercase text-[.8rem] text-card-para font-medium opacity-50">
                   specialization
@@ -272,11 +272,13 @@ const Home = () => {
                 <h1 className="text-white text-xl font-medium capitalize">services offering</h1>
               </div>
               <div className="">
-                <img
+               <Link to={'/offering'}>
+               <img
                   src={icon}
                   className="opacity-50 group-hover:opacity-100 duration-[.4s]"
                   alt=""
                 />
+               </Link>
               </div>
             </div>
           </motion.div>

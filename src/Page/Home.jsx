@@ -29,13 +29,7 @@ const Home = () => {
   }, []);
   const name = "David Henderson.".split("");
 
-  const animateVariants = {
-    open: { scale: 1, transition: { duration: 0.8, delay: loader ? 0.5 : 0 } },
-    closed: {
-      scale: 1,
-      transition: { duration: 0.8, delay: loader ? 0.5 : 0 },
-    },
-  };
+
 
   return (
     <>
@@ -91,6 +85,11 @@ const Home = () => {
               </div>
             </div>
           </motion.div>
+
+
+
+
+          
 
           <div className="slg:basis-1/2 mt-10 slg:mt-0  overflow-hidden">
             <motion.div
@@ -220,7 +219,7 @@ const Home = () => {
               duration: 0.8,
               delay: loader ? 0.5 : 0,
             }}
-            className="lg:basis-1/4 md:basis-[48%] basis-full border border-[rgba(255,255,255,0.1)] bg-card-bg group flex flex-col justify-between cursor-pointer  rounded-[1.75rem] p-8 relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[2rem] after:opacity-[.25]"
+            className="lg:basis-1/4 md:basis-[48%] basis-full border border-[rgba(255,255,255,0.1)] bg-card-bg group flex flex-col justify-between cursor-pointer  rounded-[1.75rem] p-8 relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[1.75rem] after:opacity-[.25]"
           >
             <div className="">
               <img src={gFont} alt="" />
@@ -249,7 +248,7 @@ const Home = () => {
               duration: 0.8,
               delay: loader ? 0.5 : 0,
             }}
-            className="lg:basis-2/4 cursor-pointer border border-[rgba(255,255,255,0.1)] md:basis-[48%] basis-full bg-card-bg group flex flex-col justify-end p-8 group rounded-[1.75rem] relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[2rem] after:opacity-[.25]"
+            className="lg:basis-2/4 cursor-pointer border border-[rgba(255,255,255,0.1)] md:basis-[48%] basis-full bg-card-bg group flex flex-col justify-end p-8 group rounded-[1.75rem] relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[1.75rem] after:opacity-[.25]"
           >
             <div className="flex items-center justify-between text-center flex-1 mb-8">
               <span className="basis-1/4">
@@ -291,7 +290,7 @@ const Home = () => {
               duration: 0.8,
               delay: loader ? 0.5 : 0,
             }}
-            className="lg:basis-1/4 border border-[rgba(255,255,255,0.1)] cursor-pointer group basis-full bg-card-bg p-6 flex flex-col justify-end  z-10  rounded-[1.75rem] relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[2rem] after:opacity-[.25]"
+            className="lg:basis-1/4 border border-[rgba(255,255,255,0.1)] cursor-pointer group basis-full bg-card-bg p-6 flex flex-col justify-end  z-10  rounded-[1.75rem] relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[1.75rem] after:opacity-[.25]"
           >
             <div className="bg-card-bg border border-[rgba(255,255,255,0.1)] rounded-3xl flex items-center justify-center gap-4 px-4 py-4 relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-3xl after:opacity-[.1]">
               <span className=" border border-[rgba(255,255,255,0.1)] px-5 py-5 rounded-full relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-full after:opacity-[.1]">

@@ -7,6 +7,7 @@ import Navbar from './Page/Navbar'
 import Footer from './Page/Footer'
 import Loader from './Page/Loader'
 import Offering from './Offering'
+import Credential from './Page/Credential'
 
 const  App = () => {
 
@@ -20,8 +21,9 @@ const  App = () => {
       <Route path='work' element={<Work />} />
       <Route path='contact' element={<Contact/>}/>
       <Route path='offering' element={<Offering/>}/>
+      <Route path='credential' element={<Credential/>}/>
     </Routes>
-    {/* <Footer/> */}
+    <Footer/>
     </div>
   )
 }

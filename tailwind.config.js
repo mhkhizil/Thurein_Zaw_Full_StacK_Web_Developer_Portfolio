@@ -66,7 +66,7 @@ export default {
         white: "#fff",
         gray:" #6c757d",
         'gray-dark': "#343a40",
-        primary: "#0d6efd",
+        primary: "#5b78f6",
         secondary: "#6c757d",
         success:"#198754",
         info: "#0dcaf0",
@@ -75,7 +75,8 @@ export default {
         light: "#f8f9fa",
         dark: "#212529",
         'card-bg': '#0f0f0f',
-        'card-para': '#bcbcbc'
+        'card-para': '#bcbcbc',
+        'btn-bg': '#323232'
       },
       backgroundImage: {
         'home-gradient': 'linear-gradient(90deg,#5b78f6 -15%, #C2EBFF 58%, #5b78f6 97%)',

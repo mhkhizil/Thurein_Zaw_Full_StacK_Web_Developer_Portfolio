@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Outlet, useNavigate } from 'react-router-dom'
 import me from "../../Img/Home/me.png";
 import sign from "../../Img/Home/sign.png";
 import icon from "../../Img/Home/icon.svg";
@@ -29,7 +29,7 @@ const Home = () => {
   }, []);
   const name = "David Henderson.".split("");
 
-
+  const nav = useNavigate()
 
   return (
     <>
@@ -53,7 +53,7 @@ const Home = () => {
               duration: 0.8,
               delay: loader ? 0.5 : 0,
             }}
-            className="slg:basis-1/2  bg-card-bg flex flex-col xsm:flex-row items-stretch justify-start gap-8 md:gap-8 lg:gap-8 px-6 lg:px-12 py-7 xl:py-10 2xl:py-[14] rounded-[2rem] cursor-pointer group z-20 relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[2rem] after:opacity-[.25]"
+            className="slg:basis-1/2  bg-card-bg flex flex-col xsm:flex-row items-stretch justify-start gap-8 md:gap-8 lg:gap-8 px-6 lg:px-12 py-7 xl:py-10 2xl:py-[14] rounded-[2rem] cursor-pointer group z-20 relative after:pointer-events-none after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[2rem] after:opacity-[.25]"
           >
             <div className=" sm:basis-1/3  slg:basis-1/2  w-3/5 sm:w-full mx-auto sm:mx-0  bg-home-gradient rounded-br-3xl overflow-hidden rounded-tl-3xl z-50">
 
@@ -76,13 +76,13 @@ const Home = () => {
               </p>
               </div>
 
-              <div className="">
+              <Link to={'/about'} className="">
                 <img
                   src={icon}
                   className="ml-auto opacity-50 group-hover:opacity-100 duration-[.4s] translate-y-[16px]"
                   alt=""
                 />
-              </div>
+              </Link>
             </div>
           </motion.div>
 
@@ -128,7 +128,7 @@ const Home = () => {
                   duration: 0.8,
                   delay: loader ? 0.5 : 0,
                 }}
-                className="md:basis-1/2 basis-full border cursor-pointer border-[rgba(255,255,255,0.1)] bg-card-bg px-8 py-6 rounded-3xl group relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-3xl after:opacity-[.25]"
+                className="md:basis-1/2 basis-full border cursor-pointer border-[rgba(255,255,255,0.1)] bg-card-bg px-8 py-6 rounded-3xl group relative after:pointer-events-none after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-3xl after:opacity-[.25]"
               >
                 <div className="">
                   <img src={sign} alt="" className="block" />
@@ -142,13 +142,13 @@ const Home = () => {
                       credentials
                     </h1>
                   </div>
-                  <div className="">
+                  <Link to={'/credential'}>
                     <img
                       src={icon}
                       alt=""
                       className="opacity-50 group-hover:opacity-100 duration-500 translate-y-2"
                     />
-                  </div>
+                  </Link>
                 </div>
               </motion.div>
               <motion.div
@@ -159,7 +159,7 @@ const Home = () => {
                   duration: 0.8,
                   delay: loader ? 0.5 : 0,
                 }}
-                className="md:basis-1/2 basis-full cursor-pointer border border-[rgba(255,255,255,0.1)] bg-card-bg px-8 py-6 rounded-3xl group relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-3xl after:opacity-[.25]"
+                className="md:basis-1/2 basis-full cursor-pointer border border-[rgba(255,255,255,0.1)] bg-card-bg px-8 py-6 rounded-3xl group relative after:pointer-events-none after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-3xl after:opacity-[.25]"
               >
                 <div className="">
                   <img src={work} alt="" className="block" />
@@ -173,13 +173,13 @@ const Home = () => {
                       projects
                     </h1>
                   </div>
-                  <div className="">
+                  <Link to={'/work'}>
                     <img
                       src={icon}
                       alt=""
                       className="opacity-50 group-hover:opacity-100 duration-[.4s] translate-y-2"
                     />
-                  </div>
+                  </Link>
                 </div>
               </motion.div>
             </div>
@@ -248,7 +248,7 @@ const Home = () => {
               duration: 0.8,
               delay: loader ? 0.5 : 0,
             }}
-            className="lg:basis-2/4 cursor-pointer border border-[rgba(255,255,255,0.1)] md:basis-[48%] basis-full bg-card-bg group flex flex-col justify-end p-8 group rounded-[1.75rem] relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[1.75rem] after:opacity-[.25]"
+            className="lg:basis-2/4 cursor-pointer border border-[rgba(255,255,255,0.1)] md:basis-[48%] basis-full bg-card-bg group flex flex-col justify-end p-8 group rounded-[1.75rem] relative after:pointer-events-none after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[1.75rem] after:opacity-[.25]"
           >
             <div className="flex items-center justify-between text-center flex-1 mb-8">
               <span className="basis-1/4">
@@ -290,7 +290,7 @@ const Home = () => {
               duration: 0.8,
               delay: loader ? 0.5 : 0,
             }}
-            className="lg:basis-1/4 border border-[rgba(255,255,255,0.1)] cursor-pointer group basis-full bg-card-bg p-6 flex flex-col justify-end  z-10  rounded-[1.75rem] relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[1.75rem] after:opacity-[.25]"
+            className="lg:basis-1/4 border border-[rgba(255,255,255,0.1)] cursor-pointer group basis-full bg-card-bg p-6 flex flex-col justify-end  z-10  rounded-[1.75rem] relative after:pointer-events-none after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[1.75rem] after:opacity-[.25]"
           >
             <div className="bg-card-bg border border-[rgba(255,255,255,0.1)] rounded-3xl flex items-center justify-center gap-4 px-4 py-4 relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-3xl after:opacity-[.1]">
               <span className=" border border-[rgba(255,255,255,0.1)] px-5 py-5 rounded-full relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-full after:opacity-[.1]">
@@ -307,13 +307,13 @@ const Home = () => {
                 </h4>
                 <h1 className="text-white text-xl font-medium mt-1">Profile</h1>
               </div>
-              <div className="">
+              <Link to={'/contact'} className="">
                 <img
                   src={icon}
                   className="opacity-50 group-hover:opacity-100 duration-[.4s]"
                   alt=""
                 />
-              </div>
+              </Link>
             </div>
           </motion.div>
         </section>
@@ -362,7 +362,7 @@ const Home = () => {
               duration: 0.8,
               delay: loader ? 0.5 : 0,
             }}
-            className="lg:basis-1/2 cursor-pointer border border-[rgba(255,255,255,0.1)] basis-full bg-card-bg group  px-8 flex flex-col justify-between pb-12 rounded-[2rem] relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[2rem] after:opacity-[.25]"
+            className="lg:basis-1/2 cursor-pointer border border-[rgba(255,255,255,0.1)] basis-full bg-card-bg group  px-8 flex flex-col justify-between pb-12 rounded-[2rem] relative after:pointer-events-none after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[2rem] after:opacity-[.25]"
           >
             <div className="">
               <img src={icon2} alt="" />
@@ -372,13 +372,13 @@ const Home = () => {
                 Let's <br /> work{" "}
                 <span className="text-[#5b78f6]">together.</span>{" "}
               </h1>
-              <div className="">
+              <Link to="/contact">
                 <img
                   src={icon}
                   alt=""
                   className="opacity-50 group-hover:opacity-100 duration-[.4s] "
                 />
-              </div>
+              </Link>
             </div>
           </motion.div>
         </section>

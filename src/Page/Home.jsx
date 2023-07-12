@@ -7,14 +7,12 @@ import icon from "../../Img/Home/icon.svg";
 import work from "../../Img/Home/my-works.png";
 import gFont from "../../Img/Home/gfonts.png";
 import icon2 from "../../Img/Home/icon2.png";
+import {ImGithub,ImLinkedin} from 'react-icons/im'
 
 import { FiCamera } from "react-icons/fi";
 import { PiPencilCircle } from "react-icons/pi";
 import { TbColorFilter } from "react-icons/tb";
 import { MdOutlineDeveloperMode } from "react-icons/md";
-
-import { AiOutlineDribbble } from "react-icons/ai";
-import { CiTwitter } from "react-icons/ci";
 
 import { motion } from "framer-motion";
 import { useContext, useEffect, useState } from "react";
@@ -42,7 +40,7 @@ const Home = () => {
           duration: 0.8,
           delay: 0.5,
         }}
-        className="xl:container xl:mx-auto min-h-screen px-[1rem] md:px-[2rem]  xl:px-[4.5rem]  pb-20"
+        className="xl:container xl:mx-auto min-h-screen px-[1rem] md:px-[2rem]  xl:px-[4.5rem] "
       >
         <section className="slg:flex items-stretch justify-between slg:gap-4 lg:gap-6 mt-20">
           <motion.div
@@ -292,13 +290,13 @@ const Home = () => {
             }}
             className="lg:basis-1/4 border border-[rgba(255,255,255,0.1)] cursor-pointer group basis-full bg-card-bg p-6 flex flex-col justify-end  z-10  rounded-[1.75rem] relative after:pointer-events-none after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[1.75rem] after:opacity-[.25]"
           >
-            <div className="bg-card-bg border border-[rgba(255,255,255,0.1)] rounded-3xl flex items-center justify-center gap-4 px-4 py-4 relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-3xl after:opacity-[.1]">
-              <span className=" border border-[rgba(255,255,255,0.1)] px-5 py-5 rounded-full relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-full after:opacity-[.1]">
-                <AiOutlineDribbble className="text-white text-3xl mx-auto " />
-              </span>
-              <span className="border border-[rgba(255,255,255,0.1)] px-5 py-5 rounded-full relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-full after:opacity-[.1]">
-                <CiTwitter className="text-white text-3xl mx-auto" />
-              </span>
+            <div className="box bg-card-bg p-4 mb-4 flex justify-center items-center gap-5 border border-dark rounded-4xl shadow">
+              <a href="https://github.com/enn-ko?tab=repositories" target='_blank' className='h-16 w-16 rounded-full transition duration-500 border text-white hover:text-black hover:bg-white border-dark flex justify-center items-center shadow'>
+                <ImGithub className="text-2xl "/>
+              </a>
+              <a href="https://www.linkedin.com/in/enn-ko-300843248/" target='_blank' className='h-16 w-16 rounded-full border border-dark text-white hover:text-black hover:bg-white transition duration-500 flex justify-center items-center shadow'>
+                <ImLinkedin className="text-2xl "/>
+              </a>
             </div>
             <div className="flex items-end justify-between mt-auto">
               <div className="mt-4">

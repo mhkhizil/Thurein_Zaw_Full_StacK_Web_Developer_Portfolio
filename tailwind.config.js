@@ -74,11 +74,6 @@ export default {
         danger:" #dc3545",
         light: "#f8f9fa",
         dark: "#212529",
-
-        workcolor:"#bcbcbc",
-        workcolor1:"#0f0f0f",
-        workcolor2:"#9f9f9f"
-
         'card-bg': '#0f0f0f',
         'card-para': '#bcbcbc',
         'btn-bg': '#323232'
@@ -86,7 +81,6 @@ export default {
       backgroundImage: {
         'home-gradient': 'linear-gradient(90deg,#5b78f6 -15%, #C2EBFF 58%, #5b78f6 97%)',
         'card-background': 'linear-gradient(120deg, rgba(255,255,255,0.3), rgba(255,255,255,0.05))'
-
       }
     },
   },

@@ -6,7 +6,7 @@ import icon from '../../Img/Home/icon.svg'
 import icon2 from '../../Img/About/icon2.png'
 import sign from '../../Img/About/sign.png'
 import {ImGithub,ImLinkedin} from 'react-icons/im'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import {motion} from 'framer-motion'
 import Loader from './Loader'
 
@@ -18,14 +18,6 @@ const About = () => {
       console.log("loader");
     }, 1000);
   }, []);
-
-  const animateVariants = {
-    open: { scale: 1, transition: { duration: 0.8, delay: loader ? 0.5 : 0 } },
-    closed: {
-      scale: 1,
-      transition: { duration: 0.8, delay: loader ? 0.5 : 0 },
-    },
-  };
   
   return (
    <>
@@ -39,7 +31,7 @@ const About = () => {
           duration: 0.8,
           delay: 0.5
         }}
-        className="container mx-auto">
+        className="xl:container xl:mx-auto min-h-screen px-[1rem] md:px-[2rem]  xl:px-[4.5rem] ">
         <div className="">
           <section className="p-2.5 grid grid-cols-1 lg:grid-cols-3 gap-5 xl:gap-10">
             <motion.div 
@@ -59,21 +51,31 @@ const About = () => {
               </div>
             </motion.div>
 
-            <motion.div 
-              initial={{scale : 0.7}}
-              whileInView={{scale: 1}}
-              viewport={{once : true}}
-              transition={{
-                duration: 0.8,
-                delay: loader ? 0.3 : 0,
-              }}
-              className=" col-span-1 md:col-span-2 mt-10 lg:mt-0">
+            <div className=" col-span-1 md:col-span-2 mt-10 lg:mt-0">
+              <motion.div 
+                initial={{scale : 0.7}}
+                whileInView={{scale: 1}}
+                viewport={{once : true}}
+                transition={{
+                  duration: 0.8,
+                  delay: loader ? 0.3 : 0,
+                }}
+              >
               <h1 className='mb-10 lg:mb-4 text-3xl lg:text-5xl xl:text-7xl uppercase font-medium flex items-center justify-center gap-1.5 text-white  '>
                 <img src={star} alt="" className="w-6 xl:w-16" aria-hidden="true" /> {" "}
                 selt-summery {" "}
                 <img src={star} alt="" className='w-6 xl:w-16' aria-hidden="true" />
               </h1>
-              <div className="box pt-33 pr-15 pl-7 pb-7 bg-card-bg relative rounded-4xl">
+              </motion.div>
+              <motion.div 
+               initial={{ scale: 0.7 }}
+               whileInView={{ scale: 1 }}
+               viewport={{ once: true }}
+               transition={{
+                 duration: 0.8,
+                 delay: loader ? 0.5 : 0,
+               }}
+              className="box pt-33 pr-15 pl-7 pb-7 bg-card-bg relative rounded-4xl">
                 <img src={icon2} alt="gridx icon2"  className='absolute top-0'/>
                 <h1 className='mb-2 text-4xl font-medium text-white'>David Henderson</h1>
                 <p className='text-white opacity-[0.8]'>
@@ -81,8 +83,8 @@ const About = () => {
                 illustration, a visual development. I have a diverse range of experience
                 having worked across various fields and industries.
                 </p>
-              </div>
-            </motion.div>
+              </motion.div>
+            </div>
           </section>
 
           <section className='p-2.5 grid grid-cols-1 md:grid-cols-2 gap-5'>

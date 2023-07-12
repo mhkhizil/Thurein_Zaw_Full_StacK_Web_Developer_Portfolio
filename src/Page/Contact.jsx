@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
+import {ImGithub,ImLinkedin} from 'react-icons/im'
 import { BsTelephone, BsDribbble, BsInstagram } from "react-icons/bs";
 import { GoLocation } from "react-icons/go";
 import { SlSocialTwitter } from "react-icons/sl";
@@ -14,17 +15,10 @@ const Contact = () => {
       console.log("loader");
     }, 1000);
   }, []);
-  const animateVariants = {
-    open: { scale: 1, transition: { duration: 0.8, delay: loader ? 0.5 : 0 } },
-    closed: {
-      scale: 1,
-      transition: { duration: 0.8, delay: loader ? 0.5 : 0 },
-    },
-  };
   return (
     <>
       {loader && <Loader />}
-      <section className="w-full min-h-screen flex justify-center bg-black">
+      <section className="xl:container xl:mx-auto h-auto lg:min-h-screen px-[1rem] lg:px-[2rem]  xl:px-[4.5rem]">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -32,10 +26,11 @@ const Contact = () => {
             duration: 0.8,
             delay: 0.5,
           }}
-          className="grid grid-cols-1 p-2.5 md:grid-cols-3 gap-5 justify-center mt-20 md:mt-32"
+          
+          className="grid container grid-cols-1 p-2.5 md:grid-cols-3 gap-5 justify-center mt-20 md:mt-32"
         >
           <div className=" col-span-1 flex flex-col gap-10 bg-black text-white">
-            <div className="flex flex-col gap-10">
+            <div className="flex flex-col gap-12">
               <motion.h3
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -43,7 +38,7 @@ const Contact = () => {
                   duration: 1,
                   delay: 0.5,
                 }}
-                className="text-lg font-normal"
+                className="text-lg font-normal mb-0"
               >
                 CONTACT INFO
               </motion.h3>
@@ -57,11 +52,11 @@ const Contact = () => {
                 }}
                 className="flex gap-5"
               >
-                <div className=" w-[4.5rem] h-[4.5rem] flex items-center justify-center text-2xl bg-card-bg rounded-xl p-5">
+                <div className=" h-16 w-16 flex items-center justify-center text-2xl bg-card-bg rounded-lg  p-4">
                   <AiOutlineMail />
                 </div>
-                <div>
-                  <h4 className="opacity-50">MAIL US</h4>
+                <div className="text-md">
+                  <h4 className="opacity-50 text-gray">MAIL US</h4>
                   <p>info@bluebase.com</p>
                   <p>info@bluebase2.com</p>
                 </div>
@@ -76,11 +71,11 @@ const Contact = () => {
                 }}
                 className="flex gap-5"
               >
-                <div className=" w-[4.5rem] h-[4.5rem] flex items-center justify-center text-2xl bg-card-bg rounded-xl p-5">
+                <div className=" h-16 w-16 flex items-center justify-center text-2xl bg-card-bg rounded-lg  p-4">
                   <BsTelephone />
                 </div>
-                <div>
-                  <h4 className="opacity-50">CONTACT US</h4>
+                <div className="text-md">
+                  <h4 className="opacity-50 text-gray">CONTACT US</h4>
                   <p>+1 504-899-8221</p>
                   <p>+1 504-749-5456</p>
                 </div>
@@ -95,11 +90,11 @@ const Contact = () => {
                 }}
                 className="flex gap-5"
               >
-                <div className=" w-[4.5rem] h-[4.5rem] flex items-center justify-center text-2xl bg-card-bg rounded-xl p-5">
+                <div className=" h-16 w-16 flex items-center justify-center text-2xl bg-card-bg rounded-lg  p-4">
                   <GoLocation />
                 </div>
-                <div>
-                  <h4 className="opacity-50">LOCATION</h4>
+                <div className="text-md">
+                  <h4 className="opacity-50 text-gray">LOCATION</h4>
                   <p>22 Baker Street, Texas</p>
                   <p>United States</p>
                   <p>W1U 3BW</p>
@@ -115,19 +110,19 @@ const Contact = () => {
                 duration: 0.8,
                 delay: 0.5,
               }}
-              className="flex flex-col mb-10 md:mb-0 gap-5"
+              className="flex flex-col items-start mb-10 md:mb-0 gap-5"
             >
               <h3 className="text-lg font-normal">SOCIAL INFO</h3>
-              <div className="flex items-center gap-5">
-                <div className=" w-[4.5rem] h-[4.5rem] flex justify-center items-center text-2xl bg-dark hover:bg-light hover:text-dark rounded-full p-5">
-                  <BsDribbble />
-                </div>
-                <div className=" w-[4.5rem] h-[4.5rem] flex justify-center items-center text-2xl bg-dark hover:bg-light hover:text-dark rounded-full p-5">
-                  <SlSocialTwitter />
-                </div>
-                <div className=" w-[4.5rem] h-[4.5rem] flex justify-center items-center text-2xl bg-dark hover:bg-light hover:text-dark rounded-full p-5">
-                  <BsInstagram />
-                </div>
+              <div className=" flex justify-center items-center gap-5 ">
+                <a href="#" target='_blank' className='h-16 w-16 rounded-full transition duration-500 bg-card-bg text-white hover:text-black hover:bg-white flex justify-center items-center shadow'>
+                  <BsInstagram className="text-2xl "/>
+                </a>
+                <a href="https://github.com/enn-ko?tab=repositories" target='_blank' className='h-16 w-16 rounded-full transition duration-500 bg-card-bg text-white hover:text-black hover:bg-white flex justify-center items-center shadow'>
+                  <ImGithub className="text-2xl "/>
+                </a>
+                <a href="https://www.linkedin.com/in/enn-ko-300843248/" target='_blank' className='h-16 w-16 rounded-full bg-card-bg text-white hover:text-black hover:bg-white transition duration-500 flex justify-center items-center shadow'>
+                  <ImLinkedin className="text-2xl "/>
+                </a>
               </div>
             </motion.div>
           </div>
@@ -138,7 +133,7 @@ const Contact = () => {
               duration: 0.8,
               delay: 0.5,
             }}
-            className="relative col-span-2 h-[38rem] box bg-card-bg rounded-3xl p-10"
+            className="relative col-span-2 h-[38rem] md:ml-8 lg:ml-none box bg-card-bg rounded-3xl p-10"
           >
             <img
               className="h-20 absolute top-0 right-10"
@@ -150,27 +145,27 @@ const Contact = () => {
             </h1>
             <form className="flex flex-col gap-4">
               <input
-                className="w-full bg-gray-dark placeholder-card-para rounded-lg p-3 focus:outline-none"
+                className="w-full bg-gray bg-opacity-20 opacity-40 box placeholder-grid-dark rounded-lg p-3 focus:outline-none"
                 type="text"
                 placeholder="Name *"
               />
               <input
-                className="w-full bg-gray-dark placeholder-card-para rounded-lg p-3 focus:outline-none"
+                className="w-full bg-gray bg-opacity-20 opacity-40 box placeholder-grid-dark rounded-lg p-3 focus:outline-none"
                 type="text"
                 placeholder="Email *"
               />
               <input
-                className="w-full bg-gray-dark placeholder-card-para rounded-lg p-3 focus:outline-none"
+                className="w-full bg-gray bg-opacity-20 opacity-40 box placeholder-grid-dark rounded-lg p-3 focus:outline-none"
                 type="text"
                 placeholder="Your Subject *"
               />
               <textarea
-                className="w-full bg-gray-dark placeholder-card-para rounded-lg p-3 focus:outline-none"
+                className="w-full bg-gray bg-opacity-20 opacity-40 box placeholder-grid-dark rounded-lg p-3 focus:outline-none"
                 type="text"
                 placeholder="Your Message *"
                 rows="5"
               />
-              <button className="w-full bg-gray-dark text-light hover:bg-light hover:text-dark rounded-lg py-4">
+              <button className="w-full bg-gray bg-opacity-20 opacity-40 text-light hover:bg-light hover:text-dark rounded-lg py-4">
                 Send Message
               </button>
             </form>

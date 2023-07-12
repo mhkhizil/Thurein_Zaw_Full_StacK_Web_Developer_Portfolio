@@ -37,7 +37,7 @@ const Navbar = () => {
   return (
     
     <header className='bg-black text-base font-sans z-40'>
-     <div className='container mx-auto  px-[4.5rem]'>
+     <div className='container mx-auto  py-4 px-[4.5rem]'>
 
       <div className='flex justify-between items-center py-3'>
         <Link to={'/'} >

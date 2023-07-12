@@ -15,7 +15,7 @@ const Work = () => {
       <>
       {loader && <Loader/>}
 
-      <div className="xl:container xl:mx-auto h-auto lg:min-h-screen px-[1rem] md:px-[2rem]  xl:px-[4.5rem]">
+      <div className="xl:container xl:mx-auto h-auto lg:min-h-screen mt-20 md:mt-0 px-[1rem] md:px-[2rem]  xl:px-[4.5rem]">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -67,7 +67,7 @@ const Work = () => {
               </motion.div>
             </div>
 
-            <div className=' col-span-2'>
+            <div className=' grid gap-5 col-span-2'>
               <motion.div
                initial={{ scale: 0.7 }}
                whileInView={{ scale: 1 }}
@@ -78,11 +78,11 @@ const Work = () => {
                }}
               className='  flex justify-center items-center'>
                 <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png" alt="" />
-                <h1 className=' text-white font-extrabold text-3xl md:text-5xl lg:text-6xl uppercase '>All projects</h1>
+                <h1 className=' text-white font-extrabold text-2xl sm:text-3xl md:text-5xl lg:text-6xl uppercase '>All projects</h1>
                 <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png" alt="" />
               </motion.div>
 
-           <div className=' '>
+           <div className=' grid gap-5'>
            <div className=' md:my-6 grid grid-cols-1 md:grid-cols-2 gap-5 item-center '>
               <motion.div 
                 initial={{ scale: 0.7 }}

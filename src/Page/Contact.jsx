@@ -24,7 +24,7 @@ const Contact = () => {
   return (
     <>
       {loader && <Loader />}
-      <section className="w-full h-screen flex justify-center bg-black">
+      <section className="w-full min-h-screen flex justify-center bg-black">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -32,9 +32,9 @@ const Contact = () => {
             duration: 0.8,
             delay: 0.5,
           }}
-          className="w-3/4 flex justify-center mt-32"
+          className="grid grid-cols-1 md:grid-cols-3 gap-5 justify-center mt-20 md:mt-32"
         >
-          <div className="w-1/3 flex flex-col gap-10 bg-black text-white">
+          <div className=" col-span-1 flex flex-col gap-10 bg-black text-white">
             <div className="flex flex-col gap-10">
               <motion.h3
                 initial={{ y: 100, opacity: 0 }}
@@ -43,20 +43,21 @@ const Contact = () => {
                   duration: 1,
                   delay: 0.5,
                 }}
-                className="text-lg font-semibold"
+                className="text-lg font-normal"
               >
                 CONTACT INFO
               </motion.h3>
               <motion.div
                 initial={{ scale: 0.5, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                viewport={{once: true}}
                 transition={{
                   duration: 0.8,
                   delay: 0.5,
                 }}
                 className="flex gap-5"
               >
-                <div className=" w-[4.5rem] h-[4.5rem] flex items-center justify-center text-2xl bg-card-background rounded-lg p-5">
+                <div className=" w-[4.5rem] h-[4.5rem] flex items-center justify-center text-2xl bg-card-bg rounded-xl p-5">
                   <AiOutlineMail />
                 </div>
                 <div>
@@ -67,14 +68,15 @@ const Contact = () => {
               </motion.div>
               <motion.div
                 initial={{ scale: 0.5, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                viewport={{once:true}}
                 transition={{
                   duration: 0.8,
                   delay: 0.5,
                 }}
                 className="flex gap-5"
               >
-                <div className=" w-[4.5rem] h-[4.5rem] flex items-center justify-center text-2xl bg-card-background rounded-lg p-5">
+                <div className=" w-[4.5rem] h-[4.5rem] flex items-center justify-center text-2xl bg-card-bg rounded-xl p-5">
                   <BsTelephone />
                 </div>
                 <div>
@@ -85,14 +87,15 @@ const Contact = () => {
               </motion.div>
               <motion.div
                 initial={{ scale: 0.5, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                viewport={{once:true}}
                 transition={{
                   duration: 0.8,
                   delay: 0.5,
                 }}
                 className="flex gap-5"
               >
-                <div className=" w-[4.5rem] h-[4.5rem] flex items-center justify-center text-2xl bg-card-background rounded-lg p-5">
+                <div className=" w-[4.5rem] h-[4.5rem] flex items-center justify-center text-2xl bg-card-bg rounded-xl p-5">
                   <GoLocation />
                 </div>
                 <div>
@@ -107,13 +110,14 @@ const Contact = () => {
             <motion.div
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
+              viewport={{once:true}}
               transition={{
                 duration: 0.8,
                 delay: 0.5,
               }}
-              className="flex flex-col gap-5"
+              className="flex flex-col mb-10 md:mb-0 gap-5"
             >
-              <h3 className="text-lg font-semibold">SOCIAL INFO</h3>
+              <h3 className="text-lg font-normal">SOCIAL INFO</h3>
               <div className="flex items-center gap-5">
                 <div className=" w-[4.5rem] h-[4.5rem] flex justify-center items-center text-2xl bg-dark hover:bg-light hover:text-dark rounded-full p-5">
                   <BsDribbble />
@@ -134,7 +138,7 @@ const Contact = () => {
               duration: 0.8,
               delay: 0.5,
             }}
-            className="relative w-2/3 h-[38rem] bg-dark rounded-3xl p-10"
+            className="relative col-span-2 h-[38rem] box bg-card-bg rounded-3xl p-10"
           >
             <img
               className="h-20 absolute top-0 right-10"

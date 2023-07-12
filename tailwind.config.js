@@ -76,7 +76,10 @@ export default {
         dark: "#212529",
         'card-bg': '#0f0f0f',
         'card-para': '#bcbcbc',
-        'btn-bg': '#323232'
+        'btn-bg': '#323232',
+        workcolor:"#bcbcbc",
+        workcolor1:"#0f0f0f",
+        workcolor2:"#9f9f9f"
       },
       backgroundImage: {
         'home-gradient': 'linear-gradient(90deg,#5b78f6 -15%, #C2EBFF 58%, #5b78f6 97%)',

@@ -44,7 +44,7 @@ const About = () => {
           <section className="p-2.5 grid grid-cols-1 lg:grid-cols-3 gap-5 xl:gap-10">
             <motion.div 
               initial={{scale: 0.7}}
-              animate={{scale: 1}}
+              whileInView={{scale: 1}}
               viewport={{once: true}}
               transition={{
                 duration: 0.8,
@@ -61,7 +61,7 @@ const About = () => {
 
             <motion.div 
               initial={{scale : 0.7}}
-              animate={{scale: 1}}
+              whileInView={{scale: 1}}
               viewport={{once : true}}
               transition={{
                 duration: 0.8,
@@ -142,7 +142,7 @@ const About = () => {
                 viewport={{once : true}}
                 transition={{
                   duration  : 0.8,
-                  delay : loader ? 0.5 : 0
+                  delay : loader ? 0.3 : 0
                 }}
                 className=" box bg-card-bg p-5 rounded-4xl ">
                   <img src={bg} alt="background image" className='absolute top-0 left-0 object-cover mb-4 opacity-10' />
@@ -170,7 +170,7 @@ const About = () => {
                 viewport={{once : true}}
                 transition={{
                   duration: 0.8,
-                  delay: loader ? 0.5 : 0
+                  delay: loader ? 0.3 : 0
                 }}
                 className="box pt-25 pb-10.5 px-5 col-span-1 lg:col-span-2 bg-card-bg rounded-4xl">
               <img src={bg} alt="background image" className='absolute top-0 w-full left-0 object-cover mb-4 opacity-10' />
@@ -194,7 +194,7 @@ const About = () => {
                 viewport={{once : true}}
                 transition={{
                   duration:  0.8,
-                  delay: loader ? 0.5 : 0
+                  delay: loader ? 0.3 : 0
                 }}
                 className="box p-5 rounded-4xl bg-card-bg md:col-span-3 lg:col-span-1">
               <img src={bg} alt="background image" className='absolute top-0 left-0 w-full object-cover mb-4 opacity-10' />

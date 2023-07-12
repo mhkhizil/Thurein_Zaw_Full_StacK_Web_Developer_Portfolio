@@ -49,15 +49,13 @@ const Navbar = () => {
           <span className={'absolute w-full h-0.5 top-[50%] left-[50%] bg-white translate-x-[-50%] translate-y-[10px] rounded-md transition-transform duration-300' + (!isopen && ' translate-x-[-50%] translate-y-[50%] rotate-[45deg]')}></span>
         </div>
         <motion.div
-          variants={item}
-          initial={!isopen && {height:0,opacity:0}}
-          animate={!isopen && {height:'50vh',opacity:1}}
+          initial={!isopen ? {y:0 ,opacity:0} : {y:100,opacity:1}}
+          animate={!isopen ? {y:100,opacity:1} : {y:0, opacity:0}}
           transition={{
             duration:0.8,
             delay: 0.3
           }}
-          exit='exit'
-          className={ isopen ? 'navbar hidden md:flex flex-wrap relative items-center bg-none text-gray justify-between' : 'absolute top-0 left-0 w-full mt-28 py-5 z-[1000] navbar bg-black' }>
+          className={ isopen ? 'navbar hidden md:flex flex-wrap relative items-center bg-none text-gray justify-between' : 'absolute top-0 left-0 w-full py-5 z-[1000] navbar bg-black' }>
           <ul className={'flex gap-12 text-gray ' + (!isopen && ' flex-col text-center')}>
             <li className=''>
               <NavLink to={'/'} aria-current="page" className="transition duration-300">Home</NavLink>

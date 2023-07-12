@@ -32,7 +32,7 @@ const Contact = () => {
             duration: 0.8,
             delay: 0.5,
           }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-5 justify-center mt-20 md:mt-32"
+          className="grid grid-cols-1 p-2.5 md:grid-cols-3 gap-5 justify-center mt-20 md:mt-32"
         >
           <div className=" col-span-1 flex flex-col gap-10 bg-black text-white">
             <div className="flex flex-col gap-10">

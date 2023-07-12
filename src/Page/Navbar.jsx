@@ -49,8 +49,9 @@ const Navbar = () => {
           <span className={'absolute w-full h-0.5 top-[50%] left-[50%] bg-white translate-x-[-50%] translate-y-[10px] rounded-md transition-transform duration-300' + (!isopen && ' translate-x-[-50%] translate-y-[50%] rotate-[45deg]')}></span>
         </div>
         <motion.div
-          initial={!isopen ? {y:0 ,opacity:0} : {y:100,opacity:1}}
-          animate={!isopen ? {y:100,opacity:1} : {y:0, opacity:0}}
+          initial={!isopen && {y:0 ,opacity:0}}
+          animate={!isopen && {y:100,opacity:1}}
+          viewport={{once:true}}
           transition={{
             duration:0.8,
             delay: 0.3

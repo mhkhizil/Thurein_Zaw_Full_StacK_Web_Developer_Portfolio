@@ -4,8 +4,8 @@ import logo from '../../Img/Home/logo.svg'
 
 const Footer = () => {
   return (
-    <footer className='pt-32 pb-20 bg-dark'>
-      <div className='container'>
+    <footer className='pt-32 pb-20 bg-black'>
+      <div className='container mx-auto'>
         <div className="flex justify-center items-center text-sm font-Inter flex-col">
           <Link to={'/'}>
             <img src={logo} alt="logo svg" />

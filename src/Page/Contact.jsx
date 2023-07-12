@@ -128,7 +128,8 @@ const Contact = () => {
           </div>
           <motion.div
             initial={{ scale: 0.5, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            viewport={{once:true}}
             transition={{
               duration: 0.8,
               delay: 0.5,

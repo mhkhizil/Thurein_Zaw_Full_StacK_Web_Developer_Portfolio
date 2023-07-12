@@ -31,6 +31,9 @@ export default {
         danger:" #dc3545",
         light: "#f8f9fa",
         dark: "#212529",
+        workcolor:"#bcbcbc",
+        workcolor1:"#0f0f0f",
+        workcolor2:"#9f9f9f"
       }
     },
   },

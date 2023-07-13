@@ -35,7 +35,7 @@ const Contact = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{
-                  duration: 1,
+                  duration: 0.8,
                   delay: 0.5,
                 }}
                 className="text-lg font-normal mb-0"
@@ -131,8 +131,8 @@ const Contact = () => {
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{once:true}}
             transition={{
-              duration: 0.8,
-              delay: 0.5,
+              duration: 0.4,
+              delay: loader ? 0.4 : 0,
             }}
             className="relative col-span-2 h-[38rem] md:ml-8 lg:ml-none box bg-card-bg rounded-3xl p-10"
           >

@@ -6,7 +6,7 @@ import icon from '../../Img/Home/icon.svg'
 import icon2 from '../../Img/About/icon2.png'
 import sign from '../../Img/About/sign.png'
 import {ImGithub,ImLinkedin} from 'react-icons/im'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import {motion} from 'framer-motion'
 import Loader from './Loader'
 
@@ -18,7 +18,7 @@ const About = () => {
       console.log("loader");
     }, 1000);
   }, []);
-  
+  const nav = useNavigate()
   return (
    <>
       {loader && <Loader/>}
@@ -39,7 +39,7 @@ const About = () => {
               whileInView={{scale: 1}}
               viewport={{once: true}}
               transition={{
-                duration: 0.8,
+                // duration: 0.8,
                 delay: loader ? 0.3 : 0,
               }}
             className="mx-auto md:w-1/2 lg:w-full ">
@@ -57,7 +57,7 @@ const About = () => {
                 whileInView={{scale: 1}}
                 viewport={{once : true}}
                 transition={{
-                  duration: 0.8,
+                  // duration: 0.8,
                   delay: loader ? 0.3 : 0,
                 }}
               >
@@ -72,7 +72,7 @@ const About = () => {
                whileInView={{ scale: 1 }}
                viewport={{ once: true }}
                transition={{
-                 duration: 0.8,
+                //  duration: 0.8,
                  delay: loader ? 0.5 : 0,
                }}
               className="box pt-33 pr-15 pl-7 pb-7 bg-card-bg relative rounded-4xl">
@@ -93,7 +93,7 @@ const About = () => {
                 whileInView={{scale: 1}}
                 viewport={{once : true}}
                 transition={{
-                  duration: 0.8,
+                  // duration: 0.8,
                   delay: loader ? 0.5 : 0,
                 }}
                 className="box p-7 rounded-4xl bg-card-bg">
@@ -117,7 +117,7 @@ const About = () => {
                 whileInView={{scale : 1}}
                 viewport={{once : true}}
                 transition={{
-                  duration: 0.8,
+                  // duration: 0.8,
                   delay: loader ? 0.5 : 0
                 }}
                 className="box p-7 rounded-4xl bg-card-bg">
@@ -143,9 +143,10 @@ const About = () => {
                 whileInView={{scale:  1}}
                 viewport={{once : true}}
                 transition={{
-                  duration  : 0.8,
-                  delay : loader ? 0.3 : 0
+                  // duration  : 0.8,
+                  delay : loader ? 0.5 : 0
                 }}
+                onClick={()=>nav('/contact')}
                 className=" box bg-card-bg p-5 rounded-4xl ">
                   <img src={bg} alt="background image" className='absolute top-0 left-0 object-cover mb-4 opacity-10' />
                   <div className="box bg-card-bg p-4 mb-4 flex justify-center items-center gap-5 border border-dark rounded-4xl shadow">
@@ -161,9 +162,9 @@ const About = () => {
                       <h4 className=' uppercase text-xs text-card-para opacity-50 mb-3 font-medium'>Stay with me</h4>
                       <h1 className='text-lg font-medium text-white mb-2'>Profile</h1>   
                     </div>
-                    <Link to={'/contact'} className='transition duration-300 text-card-para linkicon opacity-20'>
+                    <a href="#!" className='transition duration-300 text-card-para linkicon opacity-20'>
                         <img src={icon} alt="" className=''/>
-                    </Link>
+                    </a>
                   </div>
               </motion.div>
               <motion.div
@@ -171,9 +172,10 @@ const About = () => {
                 whileInView={{scale: 1}}
                 viewport={{once : true}}
                 transition={{
-                  duration: 0.8,
+                  // duration: 0.8,
                   delay: loader ? 0.3 : 0
                 }}
+                onClick={()=>nav('/contact')}
                 className="box pt-25 pb-10.5 px-5 col-span-1 lg:col-span-2 bg-card-bg rounded-4xl">
               <img src={bg} alt="background image" className='absolute top-0 w-full left-0 object-cover mb-4 opacity-10' />
               <img src={icon2} alt="" className='absolute top-0' />
@@ -185,9 +187,9 @@ const About = () => {
                     <span className='text-primary'>together.</span>
                   </h1>
 
-                  <Link to={'/contact'} className='transition duration-300 linkicon text-card-para opacity-20 cursor-pointer'>
+                  <a href="#!" className='transition duration-300 linkicon text-card-para opacity-20 cursor-pointer'>
                     <img src={icon} alt="" />
-                  </Link>
+                  </a>
               </div>
               </motion.div>
               <motion.div 
@@ -195,9 +197,10 @@ const About = () => {
                 whileInView={{scale : 1}}
                 viewport={{once : true}}
                 transition={{
-                  duration:  0.8,
+                  // duration:  0.8,
                   delay: loader ? 0.3 : 0
                 }}
+                onClick={()=>nav("/credential")}
                 className="box p-5 rounded-4xl bg-card-bg md:col-span-3 lg:col-span-1">
               <img src={bg} alt="background image" className='absolute top-0 left-0 w-full object-cover mb-4 opacity-10' />
               <img src={sign} alt="sign image" className='mb-4 object-cover w-[75%] lg:max-w-none px-5' />
@@ -207,9 +210,9 @@ const About = () => {
                       <h1 className='text-lg font-medium text-white mb-2'>Credentials</h1>   
                     </div>
                     <div>
-                    <Link to={'/credential'} className='linkicon transition duration-300 text-card-para opacity-20'>
+                    <a href='#!' className='linkicon transition duration-300 text-card-para opacity-20'>
                         <img src={icon} alt="" className=''/>
-                    </Link>
+                    </a>
                     </div>
                   </div>
               </motion.div>

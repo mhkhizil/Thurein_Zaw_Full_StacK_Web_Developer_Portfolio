@@ -37,27 +37,46 @@ const Navbar = () => {
   return (
     
     <header className='bg-black text-base font-sans z-40'>
-     <div className='container mx-auto  py-4 px-[4.5rem]'>
+     <div className='md:container md:mx-auto px-[1rem] md:px-[4.5rem]'>
 
       <div className='flex justify-between items-center py-3'>
         <Link to={'/'} >
-            <img src={logo} alt="" />
+            <img src={logo} alt="" className='z-[9999] relative' />
         </Link>
-        <div onClick={()=>setIsOpen(!isopen)} className="menu w-8 h-10 relative md:hidden cursor-pointer">
+        <div onClick={()=>setIsOpen(!isopen)} className="menu w-8 h-10 relative md:hidden cursor-pointer z-[9999]">
           <span className={'absolute w-full h-0.5 top-[50%] left-[50%] bg-white translate-x-[-50%] translate-y-[-13px] rounded-md transition-transform duration-300' + (!isopen &&' translate-x-[-50%] translate-y-[50%] rotate-[-45deg]')}></span>
           <span className={'absolute w-full h-0.5 top-[50%] left-[50%] bg-white translate-x-[-50%] translate-y-[-50%] rounded-md transition-transform duration-300' + (!isopen && ' !w-0')}></span>
           <span className={'absolute w-full h-0.5 top-[50%] left-[50%] bg-white translate-x-[-50%] translate-y-[10px] rounded-md transition-transform duration-300' + (!isopen && ' translate-x-[-50%] translate-y-[50%] rotate-[45deg]')}></span>
         </div>
         <motion.div
-          initial={!isopen && {y:0 ,opacity:0}}
-          animate={!isopen && {y:100,opacity:1}}
-          viewport={{once:true}}
-          transition={{
-            duration:0.8,
-            delay: 0.3
-          }}
-          className={ isopen ? 'navbar hidden md:flex flex-wrap relative items-center bg-none text-gray justify-between' : 'absolute top-0 left-0 w-full py-5 z-[1000] navbar bg-black' }>
+         
+          className={  'navbar hidden md:flex flex-wrap relative items-center bg-none text-gray justify-between'  }>
           <ul className={'flex gap-12 text-gray ' + (!isopen && ' flex-col text-center')}>
+            <li className=''>
+              <NavLink to={'/'} aria-current="page" className="transition duration-300">Home</NavLink>
+            </li>
+            <li>
+              <NavLink to={'about'} className="transition duration-300">About</NavLink>
+            </li>
+            <li>
+              <NavLink to={'work'} className="transition duration-300">Work</NavLink>
+            </li>
+            <li>
+              <NavLink to={'contact'} className="transition duration-300">Contact</NavLink>
+            </li>
+          </ul>
+        </motion.div>
+
+        <motion.div
+        initial={{y:'-100%'}}
+        animate={!isopen ? { y: 0 } : {y:'-100%'}}
+        transition={{
+          duration:.4
+        }}
+
+         
+          className={`fixed w-screen z-[999] top-0 left-0 bg-black`}>
+          <ul className={'md:hidden md:opacity-0 md:z-[-999] flex flex-col items-center justify-center gap-4 pt-20 pb-6 text-gray '}>
             <li className=''>
               <NavLink to={'/'} aria-current="page" className="transition duration-300">Home</NavLink>
             </li>

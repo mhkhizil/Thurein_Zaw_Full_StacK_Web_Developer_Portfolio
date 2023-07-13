@@ -3,7 +3,7 @@ import Loader from './Loader';
 import {motion} from "framer-motion"
 import icon from '../../Img/Home/icon.svg'
 import bookmark from '../../Img/bookmark.jpg'
-import panda from '../../Img/panda.jpg'
+import panda from '../../Img/panda.png'
 import { Link } from 'react-router-dom';
 
 const Work = () => {

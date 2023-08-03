@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import {ImGithub,ImLinkedin} from 'react-icons/im'
-import { BsTelephone, BsDribbble, BsInstagram } from "react-icons/bs";
+import { BsTelephone } from "react-icons/bs";
 import { GoLocation } from "react-icons/go";
-import { SlSocialTwitter } from "react-icons/sl";
+import {SiFrontendmentor} from 'react-icons/si'
 import Loader from "./Loader";
 
 const Contact = () => {
@@ -113,7 +113,7 @@ const Contact = () => {
               <h3 className="text-lg font-normal">SOCIAL INFO</h3>
               <div className=" flex justify-center items-center gap-5 ">
                 <a href="https://www.frontendmentor.io/profile/ennko" target='_blank' className='h-16 w-16 rounded-full transition duration-500 bg-card-bg text-white hover:text-black hover:bg-white flex justify-center items-center shadow'>
-                  <BsInstagram className="text-2xl "/>
+                  <SiFrontendmentor className="text-2xl "/>
                 </a>
                 <a href="https://github.com/enn-ko?tab=repositories" target='_blank' className='h-16 w-16 rounded-full transition duration-500 bg-card-bg text-white hover:text-black hover:bg-white flex justify-center items-center shadow'>
                   <ImGithub className="text-2xl "/>

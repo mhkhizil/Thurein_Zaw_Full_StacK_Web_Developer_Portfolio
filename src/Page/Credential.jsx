@@ -4,7 +4,7 @@ import Loader from "./Loader";
 import { motion } from "framer-motion";
 
 import { ImGithub,ImLinkedin } from "react-icons/im";
-import { FaFacebookF } from "react-icons/fa";
+import {SiFrontendmentor} from "react-icons/si"
 import { useNavigate } from "react-router-dom";
 
 const Credential = () => {
@@ -51,7 +51,7 @@ const Credential = () => {
               <ImLinkedin className="text-white text-xl group-hover:text-gray duration-150" />
             </a>
             <a href="https://www.frontendmentor.io/profile/ennko" target="_blank" className="w-10 h-10 grid hover:bg-white group z-50 cursor-pointer duration-150 place-items-center border border-[rgba(255,255,255,0.1)] rounded-full  relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[2rem] after:opacity-[.25]">
-              <FaFacebookF className="text-white text-xl group-hover:text-gray duration-150" />
+              <SiFrontendmentor className="text-white text-xl group-hover:text-gray duration-150" />
             </a>
           </div>
           <div className=" z-50 relative">

@@ -65,8 +65,8 @@ const About = () => {
             className="mx-auto md:w-1/2 lg:w-full ">
               <div className='box relative p-6 rounded-4xl h-full bg-card-bg z-10'>
                 <img src={bg} alt="background image" className='absolute top-0 left-0 object-cover h-full w-full opacity-10'/>
-                <div className="h-full rounded-4xl bg-gradient-to-r from-[#3c58e3] from-[-15%] via-[#c2ebff] via-58% to-[#5ab5e2] to-97%">
-                  <img src={me2} className='h-full rounded-4xl' alt="My profile" />
+                <div className="h-full rounded-4xl">
+                  <img src={me2}  id='admin' className='h-full rounded-4xl' alt="My profile" />
                 </div>
               </div>
             </motion.div>

@@ -1,6 +1,6 @@
 
 import React,{useEffect, useRef, useState } from 'react'
-import { Link, Outlet, useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import sign from "../../Img/Home/sign.png";
 import icon from "../../Img/Home/icon.svg";
 import work from "../../Img/Home/my-works.png";
@@ -48,7 +48,6 @@ const Home = () => {
   return (
     <>
       {loader && <Loader />}
-
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -69,9 +68,9 @@ const Home = () => {
             }}
             className="slg:basis-1/2 items-start  bg-card-bg flex flex-col xsm:flex-row justify-start gap-8 md:gap-8 lg:gap-8 px-6 lg:px-12 py-7 xl:py-10 2xl:py-[14] rounded-[2rem] cursor-pointer group z-20 relative after:pointer-events-none after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[2rem] after:opacity-[.25]"
           >
-            <div className=" sm:basis-1/3  slg:basis-1/2  w-3/5 sm:w-full mx-auto sm:mx-0  bg-home-gradient rounded-br-3xl overflow-hidden rounded-tl-3xl z-50">
+            <div className=" sm:basis-1/3  slg:basis-1/2  w-3/5 sm:w-full mx-auto sm:mx-0  rounded-br-3xl overflow-hidden rounded-tl-3xl z-50">
 
-              <img src={me} className="block  sm:w-full sm:h-full" alt="" />
+              <img src={me} id='admin' className="block sm:w-full sm:h-full" alt="" />
             </div>
             <div className=" slg:basis-1/2 sm:basis-2/3  z-50 flex xsm:flex-col flex-row justify-between ">
               <div className="">

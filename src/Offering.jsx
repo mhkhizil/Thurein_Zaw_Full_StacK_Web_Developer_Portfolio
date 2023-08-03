@@ -41,15 +41,12 @@ const Offering = () => {
              }}
              className='py-13 px-6 box bg-card-bg rounded-4xl max-h-screen'
              >
-            <ul className='grid grid-rows-4 gap-28 col-span-1'>
+            <ul className='grid grid-rows-3 gap-28 col-span-1'>
                 <li className='text-white uppercase flex items-center justify-center md:justify-start'>
                     <IoCameraOutline className="text-3xl mr-8 lg:mr-14" /> {" "} Photography
                 </li>
                 <li className='text-white uppercase flex items-center justify-center md:justify-start'>
                     <PiPencilCircle className="text-3xl mr-8 lg:mr-14" /> {" "} web designing
-                </li>
-                <li className='text-white uppercase flex items-center justify-center md:justify-start'>
-                    <IoColorFilterOutline className="text-3xl mr-8 lg:mr-14" /> {" "} Branding
                 </li>
                 <li className='text-white uppercase flex items-center justify-center md:justify-start'>
                     <MdOutlineDeveloperMode className="text-3xl mr-8 lg:mr-14" /> {" "} development
@@ -70,33 +67,31 @@ const Offering = () => {
                 my offerings {" "}
                 <img src={star} alt="" className='w-6 xl:w-16' aria-hidden="true" />
               </h1>
-              <div className="box bg-card-bg rounded-4xl py-6.5 px-7 grid grid-rows-4 xl:grid-rows-2 xl:grid-cols-2 gap-5">
-                <div className="box pt-6 pl-8 pr-12 pb-7">
+              <div className="box bg-card-bg rounded-4xl py-6.5 px-7 grid items-start xl:grid-cols-2 gap-5">
+                {/* <div className="box pt-6 pl-8 pr-12 pb-7">
                     <h3 className='text-card-para opacity-50 mb-2 font-medium text-base uppercase'>Photography</h3> 
                     <p className='text-card-para'>
                     Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor asna rhoncus dolor purus 
                     non enim aberitin praesent in elementum sahas facilisis leo, vel fringilla est etisam dignissim.
                     </p>
+                </div> */}
+                <div className="box pt-6 pl-8 pr-12 pb-7">
+                    <h3 className='text-card-para opacity-50 mb-2 font-medium text-base uppercase'>Development</h3> 
+                    <p className='text-card-para'>
+                    {/* As an expert in web development, I offer a comprehensive range of services to create exceptional websites and web applications. With proficiency in HTML, CSS, JavaScript, Tailwind, React, APIs, responsive web design, and Bootstrap, I ensure that every project is delivered with the utmost precision and attention to detail. */}
+                    Specializing in web development services, I leverage my skills in HTML, CSS, JavaScript, React, Bootstrap, and Tailwind to create dynamic and interactive websites. From concept to deployment, I deliver high-quality solutions that enhance your online presence and drive business growth.
+                    </p>
                 </div>
                 <div className="box pt-6 pl-8 pr-12 pb-7">
                     <h3 className='text-card-para opacity-50 mb-2 font-medium text-base uppercase'>web designing</h3> 
                     <p className='text-card-para'>
-                    Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor asna rhoncus dolor purus 
-                    non enim aberitin praesent in elementum sahas facilisis leo, vel fringilla est etisam dignissim.
+                    Providing professional web design services with expertise in HTML, CSS, JavaScript, React, Bootstrap, and Tailwind. Crafting visually stunning and user-friendly websites to elevate your brand and captivate your audience.
                     </p>
-                </div>
+                </div>  
                 <div className="box pt-6 pl-8 pr-12 pb-7">
                     <h3 className='text-card-para opacity-50 mb-2 font-medium text-base uppercase'>Branding</h3> 
                     <p className='text-card-para'>
-                    Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor asna rhoncus dolor purus 
-                    non enim aberitin praesent in elementum sahas facilisis leo, vel fringilla est etisam dignissim.
-                    </p>
-                </div>
-                <div className="box pt-6 pl-8 pr-12 pb-7">
-                    <h3 className='text-card-para opacity-50 mb-2 font-medium text-base uppercase'>development</h3> 
-                    <p className='text-card-para'>
-                    Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor asna rhoncus dolor purus 
-                    non enim aberitin praesent in elementum sahas facilisis leo, vel fringilla est etisam dignissim.
+                    As a front-end developer, I offer comprehensive branding services that cater to your specific needs. With expertise in HTML, CSS, JavaScript, and responsive design, I ensure your brand's online presence stands out with visually appealing and seamlessly functional websites. Let's collaborate to create a compelling digital identity for your business
                     </p>
                 </div>
               </div>
@@ -108,8 +103,8 @@ const Offering = () => {
                 whileInView={{scale:  1}}
                 viewport={{once : true}}
                 transition={{
-                  duration  : 0.8,
-                  delay : loader ? 0.3 : 0
+                  duration  : 0.4,
+                  delay : loader ? 0.1 : 0
                 }}
                 className=" box bg-card-bg p-5 rounded-4xl ">
                   <img src={bg} alt="background image" className='absolute top-0 left-0 object-cover mb-4 opacity-10' />
@@ -136,8 +131,8 @@ const Offering = () => {
                 whileInView={{scale: 1}}
                 viewport={{once : true}}
                 transition={{
-                  duration: 0.8,
-                  delay: loader ? 0.3 : 0
+                  duration: 0.4,
+                  delay: loader ? 0.1 : 0
                 }}
                 className="box pt-25 pb-10.5 px-5 col-span-1 lg:col-span-2 bg-card-bg rounded-4xl">
               <img src={bg} alt="background image" className='absolute top-0 w-full left-0 object-cover mb-4 opacity-10' />
@@ -150,7 +145,7 @@ const Offering = () => {
                     <span className='text-primary'>together.</span>
                   </h1>
 
-                  <Link to={'/contact'} className='transition duration-300 linkicon text-card-para opacity-20 cursor-pointer'>
+                  <Link to={'/cerdential'} className='transition duration-300 linkicon text-card-para opacity-20 cursor-pointer'>
                     <img src={icon} alt="" />
                   </Link>
               </div>
@@ -160,8 +155,8 @@ const Offering = () => {
                 whileInView={{scale : 1}}
                 viewport={{once : true}}
                 transition={{
-                  duration:  0.8,
-                  delay: loader ? 0.3 : 0
+                  duration:  0.4,
+                  delay: loader ? 0.1 : 0
                 }}
                 className="box p-5 rounded-4xl bg-card-bg md:col-span-3 lg:col-span-1">
               <img src={bg} alt="background image" className='absolute top-0 left-0 w-full object-cover mb-4 opacity-10' />

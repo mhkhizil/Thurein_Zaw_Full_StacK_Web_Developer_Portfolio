@@ -4,11 +4,11 @@ import logo from '../../Img/Home/logo.svg'
 
 const Footer = () => {
   return (
-    <footer className='pt-32 pb-20 bg-black'>
+    <footer className=' pt-10 pb-20 bg-black'>
       <div className='container mx-auto'>
         <div className="flex justify-center items-center text-sm font-Inter flex-col">
           <Link to={'/'}>
-            <img src={logo} alt="logo svg" />
+          
           </Link>
           <ul className='flex mt-8 mb-9 gap-11 font-base text-gray'>
             <li className=''>
@@ -26,7 +26,7 @@ const Footer = () => {
           </ul>
           <p className='text-gray'>
           © All rights reserved by {" "}
-          <span className='text-primary'> WordPressRiver</span>
+          <span className='text-primary'>Enn Ko</span>
           </p>
         </div>
       </div>

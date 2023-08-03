@@ -1,7 +1,6 @@
 
-import React from 'react'
+import React,{useEffect, useRef, useState } from 'react'
 import { Link, Outlet, useNavigate } from 'react-router-dom'
-import me from "../../Img/Home/me.png";
 import sign from "../../Img/Home/sign.png";
 import icon from "../../Img/Home/icon.svg";
 import work from "../../Img/Home/my-works.png";
@@ -11,13 +10,12 @@ import {ImGithub,ImLinkedin} from 'react-icons/im'
 
 import { FiCamera } from "react-icons/fi";
 import { PiPencilCircle } from "react-icons/pi";
-import { TbColorFilter } from "react-icons/tb";
 import { MdOutlineDeveloperMode } from "react-icons/md";
 
 import { motion } from "framer-motion";
-import { useContext, useEffect, useState } from "react";
-import { StateContext } from "../Context/StateContext";
+import me from '../../Img/me.jpg'
 import Loader from "./Loader";
+import Typed from 'typed.js';
 const Home = () => {
   const [loader, setLoader] = useState(true);
   useEffect(() => {
@@ -25,9 +23,27 @@ const Home = () => {
       setLoader(false);
     }, 1000);
   }, []);
-  const name = "David Henderson.".split("");
 
   const nav = useNavigate()
+
+  const el = useRef(null)
+
+  useEffect(()=>{
+    var typed = new Typed(el.current ,{
+      strings: ['Enn Ko'],
+      startDelay: 700,
+      typeSpeed: 50,
+      backDelay: 700,
+      loop: true,
+      backSpeed: 50,
+      loopCount: Infinity,
+      
+    });
+
+    return()=>{
+      typed.destroy();
+    }
+  },[])
 
   return (
     <>
@@ -51,7 +67,7 @@ const Home = () => {
               duration: 0.8,
               delay: loader ? 0.5 : 0,
             }}
-            className="slg:basis-1/2  bg-card-bg flex flex-col xsm:flex-row items-stretch justify-start gap-8 md:gap-8 lg:gap-8 px-6 lg:px-12 py-7 xl:py-10 2xl:py-[14] rounded-[2rem] cursor-pointer group z-20 relative after:pointer-events-none after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[2rem] after:opacity-[.25]"
+            className="slg:basis-1/2 items-start  bg-card-bg flex flex-col xsm:flex-row justify-start gap-8 md:gap-8 lg:gap-8 px-6 lg:px-12 py-7 xl:py-10 2xl:py-[14] rounded-[2rem] cursor-pointer group z-20 relative after:pointer-events-none after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[2rem] after:opacity-[.25]"
           >
             <div className=" sm:basis-1/3  slg:basis-1/2  w-3/5 sm:w-full mx-auto sm:mx-0  bg-home-gradient rounded-br-3xl overflow-hidden rounded-tl-3xl z-50">
 
@@ -64,13 +80,11 @@ const Home = () => {
                 A React Developer
               </h4>
 
-              <h1 className="text-white text-[36px] sm:text-[30px]  xl:text-[32px] 2xl:text-[36px] leading-[1.1] mb-3 mt-[1px] font-medium">
-                {name.map((letter, i) => (
-                  <span key={i}>{letter}</span>
-                ))}
+              <h1 className="text-danger text-[36px] font-Rem italic sm:text-[30px]  xl:text-[32px] 2xl:text-[36px] leading-[1.1] mb-3 mt-[1px] font-medium">
+                <span ref={el}></span>
               </h1>
-              <p className="text-card-para opacity-70 text-md font-normal tra tracking-wide xl:w-[90%]">
-                I'm a react developer based in Yangon
+              <p className="text-card-para opacity-70 text-md font-normal tra tracking-wide xl:w-[90%]">             
+                As a front-end developer experience React projects, actively learning new languages.
               </p>
               </div>
 
@@ -255,9 +269,9 @@ const Home = () => {
               <span className="basis-1/4">
                 <PiPencilCircle className="text-white text-[2.45rem] font-thin  mx-auto" />
               </span>
-              <span className="basis-1/4">
+              {/* <span className="basis-1/4">
                 <TbColorFilter className="text-white text-[2.45rem] font-thin  mx-auto" />
-              </span>
+              </span> */}
               <span className="basis-1/4">
                 <MdOutlineDeveloperMode className="text-white text-[2.45rem] font-thin  mx-auto" />
               </span>
@@ -329,7 +343,7 @@ const Home = () => {
           >
             <div className="basis-full uxsm:basis-[44.5%] xsm:basis-1/3 bg-card-bg  py-10 relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-3xl after:opacity-[.1]">
               <h1 className="text-white text-4xl font-medium text-center ">
-                07
+                01
               </h1>
               <p className="uppercase text-[.8rem] text-card-para font-normal  tracking-normal  mx-auto text-center opacity-50 w-1/2 mt-4">
                 years experience
@@ -337,7 +351,7 @@ const Home = () => {
             </div>
             <div className="basis-full uxsm:basis-[44.5%] xsm:basis-1/3 bg-card-bg  py-10 relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-3xl after:opacity-[.1]">
               <h1 className="text-white text-4xl font-medium text-center ">
-                +125
+                +10
               </h1>
               <p className="uppercase text-[.8rem] text-card-para font-normal  tracking-normal  mx-auto text-center opacity-50 w-1/2 mt-4">
                 clients worldwide
@@ -345,7 +359,7 @@ const Home = () => {
             </div>
             <div className="basis-full uxsm:basis-[44.5%] xsm:basis-1/3 bg-card-bg  py-10 relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-3xl after:opacity-[.1]">
               <h1 className="text-white text-4xl font-medium text-center ">
-                +210
+                +33
               </h1>
               <p className="uppercase text-[.8rem] text-card-para font-normal  tracking-normal  mx-auto text-center opacity-50 w-1/2 mt-4">
                 total projects

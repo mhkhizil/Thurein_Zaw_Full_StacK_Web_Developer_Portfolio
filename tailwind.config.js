@@ -27,7 +27,8 @@ export default {
     },
     extend: {
       fontFamily:{
-        'Inter' : ['Inter', 'sans-serif']
+        'Inter' : ['Inter', 'sans-serif'],
+        'Rem' : ['Edu SA Beginner', 'cursive']
       },
       borderRadius:{
         'xl' : '16px',
@@ -53,6 +54,7 @@ export default {
         '33' : '115px',
       },
       colors:{
+        base: "#A3A5A7",
         blue: "#0d6efd",
         indigo: "#6610f2",
         purple:" #6f42c1",
@@ -71,7 +73,7 @@ export default {
         success:"#198754",
         info: "#0dcaf0",
         warning: "#ffc107",
-        danger:" #dc3545",
+        danger:" #df5646",
         light: "#f8f9fa",
         dark: "#212529",
         'card-bg': '#0f0f0f',

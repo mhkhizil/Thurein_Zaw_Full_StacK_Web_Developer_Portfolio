@@ -57,8 +57,7 @@ const Contact = () => {
                 </div>
                 <div className="text-md">
                   <h4 className="opacity-50 text-gray">MAIL US</h4>
-                  <p>info@bluebase.com</p>
-                  <p>info@bluebase2.com</p>
+                  <p>ennko1898@gmail.com</p>
                 </div>
               </motion.div>
               <motion.div
@@ -76,8 +75,8 @@ const Contact = () => {
                 </div>
                 <div className="text-md">
                   <h4 className="opacity-50 text-gray">CONTACT US</h4>
-                  <p>+1 504-899-8221</p>
-                  <p>+1 504-749-5456</p>
+                  <p>+95 9455811927</p>
+                  <p>+95 9978044711</p>
                 </div>
               </motion.div>
               <motion.div
@@ -95,9 +94,8 @@ const Contact = () => {
                 </div>
                 <div className="text-md">
                   <h4 className="opacity-50 text-gray">LOCATION</h4>
-                  <p>22 Baker Street, Texas</p>
-                  <p>United States</p>
-                  <p>W1U 3BW</p>
+                  <p>Latha Street, Yangon</p>
+                  <p>Myanmar</p>
                 </div>
               </motion.div>
             </div>
@@ -114,7 +112,7 @@ const Contact = () => {
             >
               <h3 className="text-lg font-normal">SOCIAL INFO</h3>
               <div className=" flex justify-center items-center gap-5 ">
-                <a href="#" target='_blank' className='h-16 w-16 rounded-full transition duration-500 bg-card-bg text-white hover:text-black hover:bg-white flex justify-center items-center shadow'>
+                <a href="https://www.frontendmentor.io/profile/ennko" target='_blank' className='h-16 w-16 rounded-full transition duration-500 bg-card-bg text-white hover:text-black hover:bg-white flex justify-center items-center shadow'>
                   <BsInstagram className="text-2xl "/>
                 </a>
                 <a href="https://github.com/enn-ko?tab=repositories" target='_blank' className='h-16 w-16 rounded-full transition duration-500 bg-card-bg text-white hover:text-black hover:bg-white flex justify-center items-center shadow'>
@@ -146,27 +144,27 @@ const Contact = () => {
             </h1>
             <form className="flex flex-col gap-4">
               <input
-                className="w-full bg-gray bg-opacity-20 opacity-40 box placeholder-grid-dark rounded-lg p-3 focus:outline-none"
+                className="w-full bg-gray bg-opacity-20 opacity-40 text-white box placeholder-grid-dark rounded-lg p-3 focus:outline-none"
                 type="text"
                 placeholder="Name *"
               />
               <input
-                className="w-full bg-gray bg-opacity-20 opacity-40 box placeholder-grid-dark rounded-lg p-3 focus:outline-none"
+                className="w-full bg-gray bg-opacity-20 opacity-40 box text-white placeholder-grid-dark rounded-lg p-3 focus:outline-none"
                 type="text"
                 placeholder="Email *"
               />
               <input
-                className="w-full bg-gray bg-opacity-20 opacity-40 box placeholder-grid-dark rounded-lg p-3 focus:outline-none"
+                className="w-full bg-gray bg-opacity-20 opacity-40 box text-white placeholder-grid-dark rounded-lg p-3 focus:outline-none"
                 type="text"
                 placeholder="Your Subject *"
               />
               <textarea
-                className="w-full bg-gray bg-opacity-20 opacity-40 box placeholder-grid-dark rounded-lg p-3 focus:outline-none"
+                className="w-full bg-gray bg-opacity-20 opacity-40 box text-white placeholder-grid-dark rounded-lg p-3 focus:outline-none"
                 type="text"
                 placeholder="Your Message *"
                 rows="5"
               />
-              <button className="w-full bg-gray bg-opacity-20 opacity-40 text-light hover:bg-light hover:text-dark rounded-lg py-4">
+              <button className="w-full bg-danger bg-opacity-20 opacity-40 text-light hover:bg-light hover:text-danger rounded-lg py-4">
                 Send Message
               </button>
             </form>

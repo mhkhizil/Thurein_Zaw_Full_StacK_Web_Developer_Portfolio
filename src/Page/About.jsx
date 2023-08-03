@@ -1,5 +1,5 @@
-import React, { useEffect,useState } from 'react'
-import  me2 from '../../Img/About/me2.png'
+import React, { useEffect,useState,useRef } from 'react'
+import  me2 from '../../Img/me.jpg'
 import bg from '../../Img/About/bg1.png'
 import star from '../../Img/About/star-2.png'
 import icon from '../../Img/Home/icon.svg'
@@ -9,6 +9,7 @@ import {ImGithub,ImLinkedin} from 'react-icons/im'
 import { Link, useNavigate } from 'react-router-dom'
 import {motion} from 'framer-motion'
 import Loader from './Loader'
+import Typed from 'typed.js'
 
 const About = () => {
   const [loader, setLoader] = useState(true);
@@ -19,6 +20,25 @@ const About = () => {
     }, 1000);
   }, []);
   const nav = useNavigate()
+
+  const el = useRef(null)
+
+  useEffect(()=>{
+    var typed = new Typed(el.current ,{
+      strings: ['Enn Ko'],
+      startDelay: 700,
+      typeSpeed: 50,
+      backDelay: 700,
+      loop: true,
+      backSpeed: 50,
+      loopCount: Infinity,
+      
+    });
+
+    return()=>{
+      typed.destroy();
+    }
+  },[])
   return (
    <>
       {loader && <Loader/>}
@@ -33,7 +53,7 @@ const About = () => {
         }}
         className="xl:container xl:mx-auto min-h-screen px-[1rem] md:px-[2rem]  xl:px-[4.5rem] ">
         <div className="">
-          <section className="p-2.5 grid grid-cols-1 lg:grid-cols-3 gap-5 xl:gap-10">
+          <section className="p-2.5 grid grid-cols-1 lg:grid-cols-3 gap-5 items-start xl:gap-10">
             <motion.div 
               initial={{scale: 0.7}}
               whileInView={{scale: 1}}
@@ -61,7 +81,7 @@ const About = () => {
                   delay: loader ? 0.3 : 0,
                 }}
               >
-              <h1 className='mb-10 lg:mb-4 text-3xl lg:text-5xl xl:text-7xl uppercase font-medium flex items-center justify-center gap-1.5 text-white  '>
+              <h1 className='mb-10 lg:mb-4 text-3xl md:text-5xl xl:text-7xl uppercase font-medium flex items-center justify-center gap-1.5 text-white  '>
                 <img src={star} alt="" className="w-6 xl:w-16" aria-hidden="true" /> {" "}
                 selt-summery {" "}
                 <img src={star} alt="" className='w-6 xl:w-16' aria-hidden="true" />
@@ -75,14 +95,13 @@ const About = () => {
                 //  duration: 0.8,
                  delay: loader ? 0.5 : 0,
                }}
-              className="box pt-33 pr-15 pl-7 pb-7 bg-card-bg relative rounded-4xl">
+              className="box pt-20 pr-15 pl-7 pb-7 bg-card-bg relative rounded-4xl">
                 <img src={icon2} alt="gridx icon2"  className='absolute top-0'/>
-                <h1 className='mb-2 text-4xl font-medium text-white'>David Henderson</h1>
+                <h1 className='mb-2 text-4xl font-medium font-Rem italic text-danger'>
+                  <span ref={el}></span>
+                </h1>
                 <p className='text-white opacity-[0.8]'>
-                I am a San francisco-based product designer with a focus on web design, 
-                illustration, a visual development. I have a diverse range of experience
-                having worked across various fields and industries.
-                </p>
+                As a junior front-end developer, I'm passionate about crafting captivating and interactive experiences.  Collaborative workshops honed my communication skills, while my commitment to continuous learning fuels my drive to deliver innovative solutions                </p>
               </motion.div>
             </div>
           </section>
@@ -101,14 +120,14 @@ const About = () => {
                 <h3 className='mb-8 uppercase text-white font-medium text-base '>Experience</h3>
                 <ul className='text-base font-medium'>
                   <li>
-                    <p className='text-card-para opacity-60 mb-3'>2007 - 2017</p>
-                    <h2 className='text-lg mb-1.5 text-white opacity-90'>Framer Designer & Developer</h2>
-                    <p className='text-card-para opacity-70 font-normal text-sm '>Bluebase Designs</p>
+                    <p className='text-card-para opacity-60 mb-3'>20018-2019</p>
+                    <h2 className='text-lg mb-1.5 text-white opacity-90'>Feild Interviewer</h2>
+                    <p className='text-card-para opacity-70 font-normal text-sm '>Kanter TNS</p>
                   </li>
                   <li className='pt-8'>
-                    <p className='text-card-para opacity-60 mb-3'>2017 - 2023</p>
+                    <p className='text-card-para opacity-60 mb-3'>2023-Present</p>
                     <h2 className='text-lg mb-1.5 text-white opacity-90'>Front-End Developer</h2>
-                    <p className='text-card-para opacity-70 font-normal text-sm'>Larsen & Toubro</p>
+                    <p className='text-card-para opacity-70 font-normal text-sm'>MMSIT</p>
                   </li>
                 </ul>
               </motion.div>
@@ -125,14 +144,14 @@ const About = () => {
                 <h3 className='mb-8 uppercase text-white font-medium text-base '>Education</h3>
                 <ul className='text-base font-medium'>
                   <li>
-                    <p className='text-card-para opacity-60 mb-3'>2004 - 2007</p>
-                    <h2 className='text-lg mb-1.5 text-white opacity-90'>Bachelor Degreen in Psychology</h2>
-                    <p className='text-card-para opacity-70 font-normal text-sm'>University of California</p>
+                    <p className='text-card-para opacity-60 mb-3'>20014-2018</p>
+                    <h2 className='text-lg mb-1.5 text-white opacity-90'>Bachelor Degreen in International Relations</h2>
+                    <p className='text-card-para opacity-70 font-normal text-sm'>East Yangon University</p>
                   </li>
                   <li className='pt-8'>
-                    <p className='text-card-para opacity-60 mb-3'>2007 - 2009</p>
-                    <h2 className='text-lg mb-1.5 text-white opacity-90'>Master Degreen in Designing</h2>
-                    <p className='text-card-para opacity-70 font-normal text-sm'>University of Texas</p>
+                    <p className='text-card-para opacity-60 mb-3'>2023 - Present</p>
+                    <h2 className='text-lg mb-1.5 text-white opacity-90'>Special Web Design</h2>
+                    <p className='text-card-para opacity-70 font-normal text-sm'>MMSIT</p>
                   </li>
                 </ul>
               </motion.div>

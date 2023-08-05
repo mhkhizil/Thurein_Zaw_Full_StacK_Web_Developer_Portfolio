@@ -112,7 +112,7 @@ const Offering = () => {
                     <a href="https://github.com/enn-ko?tab=repositories" target='_blank' className='h-16 w-16 rounded-full transition duration-500 border text-white hover:text-black hover:bg-white border-dark flex justify-center items-center shadow'>
                       <ImGithub className="text-2xl "/>
                     </a>
-                    <a href="https://www.linkedin.com/in/enn-ko-300843248/" target='_blank' className='h-16 w-16 rounded-full border border-dark text-white hover:text-black hover:bg-white transition duration-500 flex justify-center items-center shadow'>
+                    <a href="https://www.linkedin.com/in/ennko/" target='_blank' className='h-16 w-16 rounded-full border border-dark text-white hover:text-black hover:bg-white transition duration-500 flex justify-center items-center shadow'>
                       <ImLinkedin className="text-2xl "/>
                     </a>
                   </div>

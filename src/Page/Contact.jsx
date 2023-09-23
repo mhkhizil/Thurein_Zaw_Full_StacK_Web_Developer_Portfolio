@@ -27,7 +27,7 @@ const Contact = () => {
             delay: 0.5,
           }}
           
-          className="grid container grid-cols-1 p-2.5 md:grid-cols-3 gap-5 justify-center mt-20 md:mt-32"
+          className="grid uxsm:container grid-cols-1 p-2.5 md:grid-cols-3 gap-5 justify-center mt-20 md:mt-32"
         >
           <div className=" col-span-1 flex flex-col gap-10 bg-black text-white">
             <div className="flex flex-col gap-12">
@@ -132,14 +132,14 @@ const Contact = () => {
               duration: 0.4,
               delay: loader ? 0.4 : 0,
             }}
-            className="relative col-span-2 h-[38rem] md:ml-8 lg:ml-none box bg-card-bg rounded-3xl p-10"
+            className=" relative col-span-2 h-[38rem] ml-2 mr-0  md:ml-8 lg:ml-none box bg-card-bg rounded-3xl p-4 sm:p-10"
           >
             <img
-              className="h-20 absolute top-0 right-10"
+              className="sm:h-20  h-10 absolute top-0 right-10"
               src="Img\Contact\icon2.png"
               alt=""
             />
-            <h1 className="text-4xl font-semibold text-light py-5">
+            <h1 className="text-2xl sm:text-4xl font-semibold text-light py-2 sm:py-5">
               Let's work <span className="text-primary">together.</span>
             </h1>
             <form className="flex flex-col gap-4">

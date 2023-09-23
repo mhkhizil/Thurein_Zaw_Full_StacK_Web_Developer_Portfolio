@@ -41,7 +41,7 @@ const Offering = () => {
               duration: 0.8,
               delay: loader ? 0.5 : 0,
             }}
-            className="py-13 px-6 box bg-card-bg rounded-4xl max-h-screen"
+            className="py-13 px-6 box bg-card-bg rounded-4xl max-h-screen my-6"
           >
             <ul className="grid grid-rows-4 gap-40 col-span-1">
               <li className="text-white uppercase flex items-center justify-center md:justify-start">

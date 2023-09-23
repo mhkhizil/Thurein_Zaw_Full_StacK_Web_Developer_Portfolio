@@ -16,6 +16,8 @@ import { motion } from "framer-motion";
 import me from '../../Img/me.jpg'
 import Loader from "./Loader";
 import Typed from 'typed.js';
+import { AiOutlineComment } from 'react-icons/ai';
+import { FcCollaboration } from 'react-icons/fc';
 const Home = () => {
   const [loader, setLoader] = useState(true);
   useEffect(() => {
@@ -263,17 +265,20 @@ const Home = () => {
             className="lg:basis-2/4 cursor-pointer border border-[rgba(255,255,255,0.1)] md:basis-[48%] basis-full bg-card-bg group flex flex-col justify-end p-8 group rounded-[1.75rem] relative after:pointer-events-none after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[1.75rem] after:opacity-[.25]"
           >
             <div className="flex items-center justify-between text-center flex-1 mb-8">
-              <span className="basis-1/4">
-                <FiCamera className="text-white text-[2.45rem] font-thin  mx-auto" />
+            <span className="basis-1/4">
+                <MdOutlineDeveloperMode className="text-white text-[2.45rem] font-thin  mx-auto" />
               </span>
               <span className="basis-1/4">
                 <PiPencilCircle className="text-white text-[2.45rem] font-thin  mx-auto" />
+              </span>
+              <span className="basis-1/4">
+                <AiOutlineComment className="text-white text-[2.45rem] font-thin  mx-auto" />
               </span>
               {/* <span className="basis-1/4">
                 <TbColorFilter className="text-white text-[2.45rem] font-thin  mx-auto" />
               </span> */}
               <span className="basis-1/4">
-                <MdOutlineDeveloperMode className="text-white text-[2.45rem] font-thin  mx-auto" />
+                <FcCollaboration className="text-white text-[2.45rem] font-thin  mx-auto" />
               </span>
             </div>
             <div className="flex items-end justify-between mt-auto ">

@@ -62,7 +62,7 @@ const About = () => {
                 // duration: 0.8,
                 delay: loader ? 0.3 : 0,
               }}
-            className="mx-auto md:w-1/2 lg:w-full ">
+            className="mx-auto sm:w-1/3 md:w-1/2 lg:w-full ">
               <div className='box relative p-6 rounded-4xl h-full bg-card-bg z-10'>
                 <img src={bg} alt="background image" className='absolute top-0 left-0 object-cover h-full w-full opacity-10'/>
                 <div className="h-full rounded-4xl">

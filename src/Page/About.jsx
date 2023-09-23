@@ -25,7 +25,7 @@ const About = () => {
 
   useEffect(()=>{
     var typed = new Typed(el.current ,{
-      strings: ['Enn Ko'],
+      strings: ['Thurein Zaw'],
       startDelay: 700,
       typeSpeed: 50,
       backDelay: 700,
@@ -83,7 +83,7 @@ const About = () => {
               >
               <h1 className='mb-10 lg:mb-4 text-3xl md:text-5xl xl:text-7xl uppercase font-medium flex items-center justify-center gap-1.5 text-white  '>
                 <img src={star} alt="" className="w-6 xl:w-16" aria-hidden="true" /> {" "}
-                selt-summery {" "}
+                self-summery 
                 <img src={star} alt="" className='w-6 xl:w-16' aria-hidden="true" />
               </h1>
               </motion.div>
@@ -101,7 +101,7 @@ const About = () => {
                   <span ref={el}></span>
                 </h1>
                 <p className='text-white opacity-[0.8]'>
-                As a junior front-end developer, I'm passionate about crafting captivating and interactive experiences.  Collaborative workshops honed my communication skills, while my commitment to continuous learning fuels my drive to deliver innovative solutions                </p>
+                As a React developer, I bring creativity and technical expertise to the world of web development. With a strong foundation in JavaScript and React, I have a proven track record of crafting dynamic and efficient user interfaces. My passion for clean code and attention to detail ensure that the applications I build not only look great but also perform flawlessly across various devices and browsers. I thrive in collaborative environments, leveraging my communication skills to work effectively with cross-functional teams. Whether it's creating interactive user experiences, optimizing performance, or solving complex challenges, I am committed to delivering exceptional solutions that leave a lasting impact.            </p>
               </motion.div>
             </div>
           </section>
@@ -119,11 +119,11 @@ const About = () => {
                 <img src={bg} alt="background image" className='absolute top-0 left-0 w-full h-full object-cover opacity-10' />
                 <h3 className='mb-8 uppercase text-white font-medium text-base '>Experience</h3>
                 <ul className='text-base font-medium'>
-                  <li>
-                    <p className='text-card-para opacity-60 mb-3'>20018-2019</p>
+                  {/* <li>
+                    <p className='text-card-para opacity-60 mb-3'>2018-2019</p>
                     <h2 className='text-lg mb-1.5 text-white opacity-90'>Feild Interviewer</h2>
                     <p className='text-card-para opacity-70 font-normal text-sm '>Kanter TNS</p>
-                  </li>
+                  </li> */}
                   <li className='pt-8'>
                     <p className='text-card-para opacity-60 mb-3'>2023-Present</p>
                     <h2 className='text-lg mb-1.5 text-white opacity-90'>Front-End Developer</h2>
@@ -144,14 +144,24 @@ const About = () => {
                 <h3 className='mb-8 uppercase text-white font-medium text-base '>Education</h3>
                 <ul className='text-base font-medium'>
                   <li>
-                    <p className='text-card-para opacity-60 mb-3'>20014-2018</p>
-                    <h2 className='text-lg mb-1.5 text-white opacity-90'>Bachelor Degreen in International Relations</h2>
-                    <p className='text-card-para opacity-70 font-normal text-sm'>East Yangon University</p>
+                    <p className='text-card-para opacity-60 mb-3'>2019-2020</p>
+                    <h2 className='text-lg mb-1.5 text-white opacity-90'>High School</h2>
+                    <p className='text-card-para opacity-70 font-normal text-sm'>Kaung Htet Kyaw High School</p>
                   </li>
                   <li className='pt-8'>
-                    <p className='text-card-para opacity-60 mb-3'>2023 - Present</p>
-                    <h2 className='text-lg mb-1.5 text-white opacity-90'>Special Web Design</h2>
-                    <p className='text-card-para opacity-70 font-normal text-sm'>MMSIT</p>
+                    <p className='text-card-para opacity-60 mb-3'>2021</p>
+                    <h2 className='text-lg mb-1.5 text-white opacity-90'>Higher National Diploma Foundation</h2>
+                    <p className='text-card-para opacity-70 font-normal text-sm'>GUSTO UNIVERSITY</p>
+                  </li>
+                  <li className='pt-8'>
+                    <p className='text-card-para opacity-60 mb-3'>2021-2023</p>
+                    <h2 className='text-lg mb-1.5 text-white opacity-90'>Higher National Diploma In Software Engineering</h2>
+                    <p className='text-card-para opacity-70 font-normal text-sm'>UNIVERSITY OF SUNDERLAND</p>
+                  </li>
+                  <li className='pt-8'>
+                    <p className='text-card-para opacity-60 mb-3'>2022-2023</p>
+                    <h2 className='text-lg mb-1.5 text-white opacity-90'> Diploma In Special Web Desingn</h2>
+                    <p className='text-card-para opacity-70 font-normal text-sm'>MMS IT</p>
                   </li>
                 </ul>
               </motion.div>
@@ -169,10 +179,10 @@ const About = () => {
                 className=" box bg-card-bg p-5 rounded-4xl ">
                   <img src={bg} alt="background image" className='absolute top-0 left-0 object-cover mb-4 opacity-10' />
                   <div className="box bg-card-bg p-4 mb-4 flex justify-center items-center gap-5 border border-dark rounded-4xl shadow">
-                    <a href="https://github.com/enn-ko?tab=repositories" target='_blank' className='h-16 w-16 rounded-full transition duration-500 border text-white hover:text-black hover:bg-white border-dark flex justify-center items-center shadow'>
+                    <a href="https://github.com/mhkhizil" target='_blank' className='h-16 w-16 rounded-full transition duration-500 border text-white hover:text-black hover:bg-white border-dark flex justify-center items-center shadow'>
                       <ImGithub className="text-2xl "/>
                     </a>
-                    <a href="https://www.linkedin.com/in/ennko/" target='_blank' className='h-16 w-16 rounded-full border border-dark text-white hover:text-black hover:bg-white transition duration-500 flex justify-center items-center shadow'>
+                    <a href="https://www.linkedin.com/in/thurein-zaw-62ab73291/" target='_blank' className='h-16 w-16 rounded-full border border-dark text-white hover:text-black hover:bg-white transition duration-500 flex justify-center items-center shadow'>
                       <ImLinkedin className="text-2xl "/>
                     </a>
                   </div>

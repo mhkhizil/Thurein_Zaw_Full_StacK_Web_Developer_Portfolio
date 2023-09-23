@@ -30,7 +30,7 @@ const Home = () => {
 
   useEffect(()=>{
     var typed = new Typed(el.current ,{
-      strings: ['Enn Ko'],
+      strings: ['Thurein Zaw'],
       startDelay: 700,
       typeSpeed: 50,
       backDelay: 700,
@@ -58,6 +58,7 @@ const Home = () => {
         className="xl:container xl:mx-auto min-h-screen px-[1rem] md:px-[2rem]  xl:px-[4.5rem] "
       >
         <section className="slg:flex items-stretch justify-between slg:gap-4 lg:gap-6 mt-20">
+          {/* MY PIC SEC &  */}
           <motion.div
             initial={{ scale: 0.7 }}
             whileInView={{ scale: 1 }}
@@ -83,7 +84,7 @@ const Home = () => {
                 <span ref={el}></span>
               </h1>
               <p className="text-card-para opacity-70 text-md font-normal tra tracking-wide xl:w-[90%]">             
-                As a front-end developer experience React projects, actively learning new languages.
+             I am a front-end web developer currently living in Yangon,Myanmar
               </p>
               </div>
 
@@ -113,6 +114,7 @@ const Home = () => {
               }}
               className="bg-card-bg px-4 py-4 rounded-full relative "
             >
+              {/* non stop news animation */}
               <div className="overflow-hidden flex items-center">
                 <motion.span
                   initial={{ x: "30%" }}
@@ -125,8 +127,7 @@ const Home = () => {
                   }}
                   className=" text-card-para text-sm overflow-hidden w whitespace-nowrap"
                 >
-                  * Latest work and feature * Latest work and feature * Latest
-                  work and feature
+                I have written a point of sale web application using react along with a lot of front-end libraries
                 </motion.span>
               </div>
             </motion.div>
@@ -304,10 +305,10 @@ const Home = () => {
             className="lg:basis-1/4 border border-[rgba(255,255,255,0.1)] cursor-pointer group basis-full bg-card-bg p-6 flex flex-col justify-end  z-10  rounded-[1.75rem] relative after:pointer-events-none after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[1.75rem] after:opacity-[.25]"
           >
             <div className="box bg-card-bg p-4 mb-4 flex justify-center items-center gap-5 border border-dark rounded-4xl shadow">
-              <a href="https://github.com/enn-ko?tab=repositories" target='_blank' className='h-16 w-16 rounded-full transition duration-500 border text-white hover:text-black hover:bg-white border-dark flex justify-center items-center shadow'>
+              <a href="https://github.com/mhkhizil" target='_blank' className='h-16 w-16 rounded-full transition duration-500 border text-white hover:text-black hover:bg-white border-dark flex justify-center items-center shadow'>
                 <ImGithub className="text-2xl "/>
               </a>
-              <a href="https://www.linkedin.com/in/ennko/" target='_blank' className='h-16 w-16 rounded-full border border-dark text-white hover:text-black hover:bg-white transition duration-500 flex justify-center items-center shadow'>
+              <a href="https://www.linkedin.com/in/thurein-zaw-62ab73291/" target='_blank' className='h-16 w-16 rounded-full border border-dark text-white hover:text-black hover:bg-white transition duration-500 flex justify-center items-center shadow'>
                 <ImLinkedin className="text-2xl "/>
               </a>
             </div>

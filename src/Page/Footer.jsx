@@ -26,7 +26,7 @@ const Footer = () => {
           </ul>
           <p className='text-gray'>
           © All rights reserved by {" "}
-          <span className='text-primary'>Enn Ko</span>
+          <span className='text-primary'>Thurein Zaw</span>
           </p>
         </div>
       </div>

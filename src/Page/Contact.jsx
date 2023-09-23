@@ -57,7 +57,7 @@ const Contact = () => {
                 </div>
                 <div className="text-md">
                   <h4 className="opacity-50 text-gray">MAIL US</h4>
-                  <p>ennko1898@gmail.com</p>
+                  <p>mhkhizilthurainzaw@gmail.com</p>
                 </div>
               </motion.div>
               <motion.div
@@ -75,8 +75,8 @@ const Contact = () => {
                 </div>
                 <div className="text-md">
                   <h4 className="opacity-50 text-gray">CONTACT US</h4>
-                  <p>+95 9455811927</p>
-                  <p>+95 9978044711</p>
+                  <p>+95 9775171593</p>
+                  <p>+95 9784050180</p>
                 </div>
               </motion.div>
               <motion.div
@@ -94,7 +94,7 @@ const Contact = () => {
                 </div>
                 <div className="text-md">
                   <h4 className="opacity-50 text-gray">LOCATION</h4>
-                  <p>Latha Street, Yangon</p>
+                  <p>Konezaydan Street, Yangon</p>
                   <p>Myanmar</p>
                 </div>
               </motion.div>
@@ -112,13 +112,13 @@ const Contact = () => {
             >
               <h3 className="text-lg font-normal">SOCIAL INFO</h3>
               <div className=" flex justify-center items-center gap-5 ">
-                <a href="https://www.frontendmentor.io/profile/ennko" target='_blank' className='h-16 w-16 rounded-full transition duration-500 bg-card-bg text-white hover:text-black hover:bg-white flex justify-center items-center shadow'>
+                <a href="https://www.frontendmentor.io/profile/mhkhizil" target='_blank' className='h-16 w-16 rounded-full transition duration-500 bg-card-bg text-white hover:text-black hover:bg-white flex justify-center items-center shadow'>
                   <SiFrontendmentor className="text-2xl "/>
                 </a>
-                <a href="https://github.com/enn-ko?tab=repositories" target='_blank' className='h-16 w-16 rounded-full transition duration-500 bg-card-bg text-white hover:text-black hover:bg-white flex justify-center items-center shadow'>
+                <a href="https://github.com/mhkhizil" target='_blank' className='h-16 w-16 rounded-full transition duration-500 bg-card-bg text-white hover:text-black hover:bg-white flex justify-center items-center shadow'>
                   <ImGithub className="text-2xl "/>
                 </a>
-                <a href="https://www.linkedin.com/in/ennko/" target='_blank' className='h-16 w-16 rounded-full bg-card-bg text-white hover:text-black hover:bg-white transition duration-500 flex justify-center items-center shadow'>
+                <a href="https://www.linkedin.com/in/thurein-zaw-62ab73291/" target='_blank' className='h-16 w-16 rounded-full bg-card-bg text-white hover:text-black hover:bg-white transition duration-500 flex justify-center items-center shadow'>
                   <ImLinkedin className="text-2xl "/>
                 </a>
               </div>

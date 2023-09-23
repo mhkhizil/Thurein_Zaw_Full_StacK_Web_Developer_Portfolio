@@ -2,6 +2,8 @@ import React,{useState,useEffect} from 'react'
 import Loader from './Loader';
 import {motion} from "framer-motion"
 import icon from '../../Img/Home/icon.svg'
+import webpic  from '../../Img/Work/web1.png'
+import webpic2 from '../../Img/Work/web2.png'
 import bookmark from '../../Img/bookmark.jpg'
 import panda from '../../Img/panda.png'
 import { Link } from 'react-router-dom';
@@ -27,9 +29,9 @@ const Work = () => {
             duration: 0.8,
             delay: 0.5,
           }}
-          className=' grid grid-cols-1 md:mt-20 md:grid-cols-3 gap-5 pt-8  items-center justify-center'>
-            <div className=' grid gap-5 col-span-1'>
-              <Link to={'https://show-now.vercel.app/'} target='__blank'>
+          className=' grid grid-cols-1 md:mt-20 md:grid-cols-3 gap-5  items-center justify-center'>
+            <div className='   grid gap-5 col-span-1'>
+              <Link to={'https://zippy-squirrel-cedee2.netlify.app'} target='__blank'>
               <motion.div
                 initial={{ scale: 0.7 }}
                 whileInView={{ scale: 1 }}
@@ -39,11 +41,11 @@ const Work = () => {
                   delay: loader ? 0.5 : 0,
                 }}
               className=' bg-card-bg box p-4 pb-6.5 rounded-4xl'>
-                  <img className='rounded-4xl mb-4' src="https://i.pinimg.com/564x/51/98/8f/51988f5be167451bb67e39384ae7d407.jpg" alt="" />
+                  <img className=' h-[380px] rounded-4xl mb-4' src={webpic} alt="" />
                   <div className=' flex items-center justify-between '>
                     <div className=''>
                       <p className='  text-xs uppercase mb-0 text-card-para opacity-50'>Web designing</p>
-                      <h6 className='  text-card-para font-medium text-lg'>Shop App</h6>
+                      <h6 className='  text-card-para font-medium text-lg'>University Club Website</h6>
                     </div>
                     <span className='transition duration-300 text-card-para linkicon opacity-20'>
                       <img src={icon} alt="" className=''/>
@@ -52,7 +54,7 @@ const Work = () => {
               </motion.div>
               </Link>
 
-              <Link to={'https://flowyark.vercel.app/'} target='__blank'>
+              <Link to={'https://velzon-ten.vercel.app/'} target='__blank'>
               <motion.div
                 initial={{ scale: 0.7 }}
                 whileInView={{ scale: 1 }}
@@ -62,11 +64,11 @@ const Work = () => {
                   delay: loader ? 0.5 : 0,
                 }}
               className='  bg-card-bg box p-4 pb-6.5 rounded-4xl'>
-                  <img className='rounded-4xl mb-4' src="https://i.pinimg.com/564x/29/92/21/2992215e831d4ca10e9ff70852cab051.jpg" alt="" />
+                  <img className='   h-[390px] rounded-4xl mb-4' src={webpic2} alt="" />
                   <div className=' flex items-center justify-between '>
                     <div className=''>
                       <p className='  text-xs uppercase mb-0 text-card-para opacity-50'>Web designing</p>
-                      <h6 className='  text-card-para font-medium text-lg'>Flow Yak</h6>
+                      <h6 className='  text-card-para font-medium text-lg'>Velzon Dashboard</h6>
                     </div>
                     <span className='transition duration-300 text-card-para linkicon opacity-20'>
                       <img src={icon} alt="" className=''/>
@@ -93,7 +95,7 @@ const Work = () => {
 
            <div className=' grid gap-5'>
            <div className=' md:my-6 grid grid-cols-1 md:grid-cols-2 gap-5 item-center '>
-            <Link to={'https://contact-app-pearl.vercel.app/'} target='__blank'>
+            <Link to={'https://steady-zabaione-1ab1f6.netlify.app'} target='__blank'>
             <motion.div 
                 initial={{ scale: 0.7 }}
                 whileInView={{ scale: 1 }}
@@ -107,7 +109,7 @@ const Work = () => {
                   <div className=' flex items-center justify-between '>
                     <div className=''>
                       <p className='  text-xs uppercase mb-0 text-card-para opacity-50'>Web designing</p>
-                      <h6 className='  text-card-para font-medium text-lg'>Contact</h6>
+                      <h6 className='  text-card-para font-medium text-lg'>Contact website</h6>
                     </div>
                     <span className='transition duration-300 text-card-para linkicon opacity-20'>
                       <img src={icon} alt="" className=''/>
@@ -127,11 +129,11 @@ const Work = () => {
                   delay: loader ? 0.5 : 0,
                 }}
                 className=' bg-card-bg box p-4 pb-6.5 rounded-4xl'>
-                  <img className='rounded-4xl mb-4' src={panda} alt="" />
+                  <img className='rounded-4xl mb-4 h-[310px]' src={panda} alt="" />
                   <div className=' flex items-center justify-between '>
                     <div className=''>
                       <p className='  text-xs uppercase mb-0 text-card-para opacity-50'>Web designing</p>
-                      <h6 className='  text-card-para font-medium text-lg'>Panda</h6>
+                      <h6 className='  text-card-para font-medium text-lg'>Metaverse clone website</h6>
                     </div>
                     <span className='transition duration-300 text-card-para linkicon opacity-20'>
                       <img src={icon} alt="" className=''/>
@@ -156,7 +158,7 @@ const Work = () => {
                   <div className=' flex items-center justify-between '>
                     <div className=''>
                       <p className='  text-xs uppercase mb-0 text-card-para opacity-50'>Web designing</p>
-                      <h6 className='  text-card-para font-medium text-lg'>Dashboard</h6>
+                      <h6 className='  text-card-para font-medium text-lg'>Point of Sale Web app</h6>
                     </div>
                     <span className='transition duration-300 text-card-para linkicon opacity-20'>
                       <img src={icon} alt="" className=''/>

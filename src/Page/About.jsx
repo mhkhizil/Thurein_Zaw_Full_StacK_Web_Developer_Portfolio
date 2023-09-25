@@ -66,7 +66,7 @@ const About = () => {
               <div className='box relative p-6 rounded-4xl h-full bg-card-bg z-10'>
                 <img src={bg} alt="background image" className='absolute top-0 left-0 object-cover h-full w-full opacity-10'/>
                 <div className="h-full rounded-4xl">
-                  <img src={me2}  id='admin' className='h-full rounded-4xl' alt="My profile" />
+                  <img src={me2}  id='admin' className='rounded-4xl' alt="My profile" />
                 </div>
               </div>
             </motion.div>

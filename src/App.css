@@ -87,7 +87,7 @@ html{
 }
 
 /* <----spinner-----> */
-body{background:#ECF0F1}
+body{background:#0f0f0f}
 
 .load{position:absolute;top:50%;z-index: 2000;left:50%;transform:translate(-50%, -50%);
   /*change these sizes to fit into your project*/

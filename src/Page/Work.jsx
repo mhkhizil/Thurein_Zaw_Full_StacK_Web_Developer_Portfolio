@@ -90,7 +90,7 @@ const Work = () => {
                }}
               className='  flex justify-center items-center'>
                 <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png" alt="" />
-                <h1 className=' text-white font-extrabold text-2xl sm:text-3xl md:text-5xl lg:text-6xl uppercase '>Example projects</h1>
+                <h1 className=' text-white font-extrabold text-lg sm:text-3xl md:text-5xl lg:text-6xl uppercase '>Example projects</h1>
                 <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png" alt="" />
               </motion.div>
 

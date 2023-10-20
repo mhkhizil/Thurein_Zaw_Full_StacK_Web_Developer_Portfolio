@@ -236,7 +236,7 @@ const About = () => {
               <div className="flex justify-between items-center">
                     <div className=''>
                       <h4 className=' uppercase text-xs text-card-para opacity-50 mb-3 font-medium'>More about me</h4>
-                      <h1 className='text-lg font-medium text-white mb-2'>Credentials</h1>   
+                      <h1 className='text-lg font-medium text-white mb-2'>History about me</h1>   
                     </div>
                     <div>
                     <a href='#!' className='linkicon transition duration-300 text-card-para opacity-20'>

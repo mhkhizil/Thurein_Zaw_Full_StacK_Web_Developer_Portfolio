@@ -153,7 +153,7 @@ const Home = () => {
                       more about me
                     </h4>
                     <h1 className="text-white font-medium text-xl capitalize">
-                      credentials
+                    History about me
                     </h1>
                   </div>
                   <Link to={'/credential'}>

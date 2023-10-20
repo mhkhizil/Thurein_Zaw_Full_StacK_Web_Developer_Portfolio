@@ -255,7 +255,7 @@ const Offering = () => {
                   More about me
                 </h4>
                 <h1 className="text-lg font-medium text-white mb-2">
-                  Credentials
+                  History about me
                 </h1>
               </div>
               <div>

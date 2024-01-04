@@ -29,8 +29,8 @@ const Contact = () => {
           
           className="grid uxsm:container grid-cols-1 p-2.5 md:grid-cols-3 gap-5 justify-center mt-20 md:mt-32"
         >
-          <div className=" col-span-1 flex flex-col gap-10 bg-black text-white">
-            <div className="flex flex-col gap-12">
+          <div className="  col-span-1 flex flex-col gap-10 bg-black text-white">
+            <div className="z-40 flex flex-col gap-12">
               <motion.h3
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -56,7 +56,7 @@ const Contact = () => {
                   <AiOutlineMail />
                 </div>
                 <div className="text-md">
-                  <h4 className="opacity-50 text-gray">MAIL US</h4>
+                  <h4 className="  font-extrabold tracking-widest opacity-80 text-gray">MAIL US</h4>
                   <p>mhkhizilthurainzaw@gmail.com</p>
                 </div>
               </motion.div>
@@ -74,7 +74,7 @@ const Contact = () => {
                   <BsTelephone />
                 </div>
                 <div className="text-md">
-                  <h4 className="opacity-50 text-gray">CONTACT US</h4>
+                  <h4 className=" font-extrabold tracking-widest opacity-80  text-gray">CONTACT US</h4>
                   <p>+95 9775171593</p>
                   <p>+95 9784050180</p>
                 </div>
@@ -93,7 +93,7 @@ const Contact = () => {
                   <GoLocation />
                 </div>
                 <div className="text-md">
-                  <h4 className="opacity-50 text-gray">LOCATION</h4>
+                  <h4 className="font-extrabold tracking-widest opacity-80 text-gray">LOCATION</h4>
                   <p>Konezaydan Street, Yangon</p>
                   <p>Myanmar</p>
                 </div>
@@ -108,7 +108,7 @@ const Contact = () => {
                 duration: 0.8,
                 delay: 0.5,
               }}
-              className="flex flex-col items-start mb-10 md:mb-0 gap-5"
+              className=" z-40 flex flex-col items-start mb-10 md:mb-0 gap-5"
             >
               <h3 className="text-lg font-normal">SOCIAL INFO</h3>
               <div className=" flex justify-center items-center gap-5 ">

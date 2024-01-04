@@ -81,10 +81,10 @@ const About = () => {
                   delay: loader ? 0.3 : 0,
                 }}
               >
-              <h1 className='mb-10 lg:mb-4 text-3xl md:text-5xl xl:text-7xl uppercase font-medium flex items-center justify-center gap-1.5 text-white  '>
-                <img src={star} alt="" className="w-6 xl:w-16" aria-hidden="true" /> {" "}
-                self-summery 
-                <img src={star} alt="" className='w-6 xl:w-16' aria-hidden="true" />
+              <h1 className=' z-40  mb-10 lg:mb-4 text-3xl md:text-5xl xl:text-7xl uppercase font-medium flex items-center justify-center gap-1.5 text-white  '>
+                <img src={star} alt="" className="w-6 xl:w-16 z-40" aria-hidden="true" /> {" "}
+                <span className='z-40'> self-summery </span>
+                <img src={star} alt="" className='w-6 xl:w-16 z-40' aria-hidden="true" />
               </h1>
               </motion.div>
               <motion.div 

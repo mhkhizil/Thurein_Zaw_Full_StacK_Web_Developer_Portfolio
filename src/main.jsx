@@ -1,16 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './App.css'
-import { BrowserRouter } from 'react-router-dom'
-import StateContextProvider from './Context/StateContext.jsx'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import StateContextProvider from "./Context/StateContext.jsx";
+import MatrixAnimation from "./Page/MatrixBackground.jsx";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
-   <StateContextProvider>
-   <App/>
-   </StateContextProvider>
+      <StateContextProvider>
+        <App />
+      </StateContextProvider>
     </BrowserRouter>
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);

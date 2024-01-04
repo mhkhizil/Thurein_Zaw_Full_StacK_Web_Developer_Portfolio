@@ -4,13 +4,13 @@ import logo from '../../Img/Home/logo.svg'
 
 const Footer = () => {
   return (
-    <footer className=' pt-10 pb-20 bg-black'>
-      <div className='container mx-auto'>
-        <div className="flex justify-center items-center text-sm font-Inter flex-col">
+    <footer className=' pt-10 pb-20  '>
+      <div className='container mx-auto  '>
+        <div className="flex justify-center items-center text-sm font-Inter flex-col ">
           <Link to={'/'}>
           
           </Link>
-          <ul className='flex mt-8 mb-9 gap-11 font-base text-gray'>
+          <ul className='flex mt-8 mb-9 gap-11 font-base text-gray z-40'>
             <li className=''>
               <NavLink to={'/'} aria-current="page" className="transition duration-300">Home</NavLink>
             </li>
@@ -24,7 +24,7 @@ const Footer = () => {
               <NavLink to={'contact'} className="transition duration-300">Contact</NavLink>
             </li>
           </ul>
-          <p className='text-gray'>
+          <p className='text-gray z-40'>
           © All rights reserved by {" "}
           <span className='text-primary'>Thurein Zaw</span>
           </p>

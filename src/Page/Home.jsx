@@ -1,23 +1,22 @@
-
-import React,{useEffect, useRef, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import React, { useEffect, useRef, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import sign from "../../Img/Home/sign.png";
 import icon from "../../Img/Home/icon.svg";
 import work from "../../Img/Home/my-works.png";
 import gFont from "../../Img/Home/gfonts.png";
 import icon2 from "../../Img/Home/icon2.png";
-import {ImGithub,ImLinkedin} from 'react-icons/im'
+import { ImGithub, ImLinkedin } from "react-icons/im";
 
 import { FiCamera } from "react-icons/fi";
 import { PiPencilCircle } from "react-icons/pi";
 import { MdOutlineDeveloperMode } from "react-icons/md";
 
 import { motion } from "framer-motion";
-import me from '../../Img/me.jpg'
+import me from "../../Img/me.jpg";
 import Loader from "./Loader";
-import Typed from 'typed.js';
-import { AiOutlineComment } from 'react-icons/ai';
-import { FcCollaboration } from 'react-icons/fc';
+import Typed from "typed.js";
+import { AiOutlineComment } from "react-icons/ai";
+import { FcCollaboration } from "react-icons/fc";
 const Home = () => {
   const [loader, setLoader] = useState(true);
   useEffect(() => {
@@ -26,26 +25,25 @@ const Home = () => {
     }, 1000);
   }, []);
 
-  const nav = useNavigate()
+  const nav = useNavigate();
 
-  const el = useRef(null)
+  const el = useRef(null);
 
-  useEffect(()=>{
-    var typed = new Typed(el.current ,{
-      strings: ['Thurein Zaw'],
+  useEffect(() => {
+    var typed = new Typed(el.current, {
+      strings: ["Thurein Zaw"],
       startDelay: 700,
       typeSpeed: 50,
       backDelay: 700,
       loop: true,
       backSpeed: 50,
       loopCount: Infinity,
-      
     });
 
-    return()=>{
+    return () => {
       typed.destroy();
-    }
-  },[])
+    };
+  }, []);
 
   return (
     <>
@@ -72,25 +70,29 @@ const Home = () => {
             className="slg:basis-1/2 items-start  bg-card-bg flex flex-col xsm:flex-row justify-start gap-8 md:gap-8 lg:gap-8 px-6 lg:px-12 py-7 xl:py-10 2xl:py-[14] rounded-[2rem] cursor-pointer group z-20 relative after:pointer-events-none after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[2rem] after:opacity-[.25]"
           >
             <div className=" sm:basis-1/3  slg:basis-1/2  w-3/5 sm:w-full mx-auto sm:mx-0  rounded-br-3xl overflow-hidden rounded-tl-3xl z-50">
-
-              <img src={me} id='admin' className="block sm:w-full sm:h-full" alt="" />
+              <img
+                src={me}
+                id="admin"
+                className="block sm:w-full sm:h-full"
+                alt=""
+              />
             </div>
             <div className=" slg:basis-1/2 sm:basis-2/3  z-50 flex xsm:flex-col flex-row justify-between ">
               <div className="">
+                <h4 className="text-card-para uppercase text-[10px] md:text-[12px] slg:text-[12px] lg:text-[14px] tracking-wide opacity-70  font-medium">
+                  A React Developer
+                </h4>
 
-              <h4 className="text-card-para uppercase text-[10px] md:text-[12px] slg:text-[12px] lg:text-[14px] tracking-wide opacity-70  font-medium">
-                A React Developer
-              </h4>
-
-              <h1 className="text-danger text-[36px] font-Rem italic sm:text-[30px]  xl:text-[32px] 2xl:text-[36px] leading-[1.1] mb-3 mt-[1px] font-medium">
-                <span ref={el}></span>
-              </h1>
-              <p className="text-card-para opacity-70 text-md font-normal tra tracking-wide xl:w-[90%]">             
-             I am a front-end web developer currently living in Yangon,Myanmar
-              </p>
+                <h1 className="text-danger text-[36px] font-Rem italic sm:text-[30px]  xl:text-[32px] 2xl:text-[36px] leading-[1.1] mb-3 mt-[1px] font-medium">
+                  <span ref={el}></span>
+                </h1>
+                <p className="text-card-para opacity-70 text-md font-normal tra tracking-wide xl:w-[90%]">
+                  I am a front-end web developer currently living in
+                  Yangon,Myanmar
+                </p>
               </div>
 
-              <Link to={'/about'} className="">
+              <Link to={"/about"} className="">
                 <img
                   src={icon}
                   className="ml-auto opacity-50 group-hover:opacity-100 duration-[.4s] translate-y-[16px]"
@@ -99,11 +101,6 @@ const Home = () => {
               </Link>
             </div>
           </motion.div>
-
-
-
-
-          
 
           <div className="slg:basis-1/2 mt-10 slg:mt-0  overflow-hidden">
             <motion.div
@@ -129,7 +126,8 @@ const Home = () => {
                   }}
                   className=" text-card-para text-sm overflow-hidden w whitespace-nowrap"
                 >
-                I have written a point of sale web application using react along with a lot of front-end libraries
+                  I have written a point of sale web application using react
+                  along with a lot of front-end libraries
                 </motion.span>
               </div>
             </motion.div>
@@ -153,10 +151,10 @@ const Home = () => {
                       more about me
                     </h4>
                     <h1 className="text-white font-medium text-xl capitalize">
-                    History about me
+                      History about me
                     </h1>
                   </div>
-                  <Link to={'/credential'}>
+                  <Link to={"/credential"}>
                     <img
                       src={icon}
                       alt=""
@@ -187,7 +185,7 @@ const Home = () => {
                       projects
                     </h1>
                   </div>
-                  <Link to={'/work'}>
+                  <Link to={"/work"}>
                     <img
                       src={icon}
                       alt=""
@@ -199,30 +197,6 @@ const Home = () => {
             </div>
           </div>
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <section className="flex items-stretch md:items-start lg:items-stretch justify-between lg:gap-6 gap-4  mt-4 flex-wrap lg:flex-nowrap">
           <motion.div
@@ -265,7 +239,7 @@ const Home = () => {
             className="lg:basis-2/4 cursor-pointer border border-[rgba(255,255,255,0.1)] md:basis-[48%] basis-full bg-card-bg group flex flex-col justify-end p-8 group rounded-[1.75rem] relative after:pointer-events-none after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[1.75rem] after:opacity-[.25]"
           >
             <div className="flex items-center justify-between text-center flex-1 mb-8">
-            <span className="basis-1/4">
+              <span className="basis-1/4">
                 <MdOutlineDeveloperMode className="text-white text-[2.45rem] font-thin  mx-auto" />
               </span>
               <span className="basis-1/4">
@@ -286,16 +260,18 @@ const Home = () => {
                 <h4 className="uppercase text-[.8rem] text-card-para font-medium opacity-50">
                   specialization
                 </h4>
-                <h1 className="text-white text-xl font-medium capitalize">services offering</h1>
+                <h1 className="text-white text-xl font-medium capitalize">
+                  services offering
+                </h1>
               </div>
               <div className="">
-               <Link to={'/offering'}>
-               <img
-                  src={icon}
-                  className="opacity-50 group-hover:opacity-100 duration-[.4s]"
-                  alt=""
-                />
-               </Link>
+                <Link to={"/offering"}>
+                  <img
+                    src={icon}
+                    className="opacity-50 group-hover:opacity-100 duration-[.4s]"
+                    alt=""
+                  />
+                </Link>
               </div>
             </div>
           </motion.div>
@@ -310,11 +286,19 @@ const Home = () => {
             className="lg:basis-1/4 border border-[rgba(255,255,255,0.1)] cursor-pointer group basis-full bg-card-bg p-6 flex flex-col justify-end  z-10  rounded-[1.75rem] relative after:pointer-events-none after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-card-background after:rounded-[1.75rem] after:opacity-[.25]"
           >
             <div className="box bg-card-bg p-4 mb-4 flex justify-center items-center gap-5 border border-dark rounded-4xl shadow">
-              <a href="https://github.com/mhkhizil" target='_blank' className='h-16 w-16 rounded-full transition duration-500 border text-white hover:text-black hover:bg-white border-dark flex justify-center items-center shadow'>
-                <ImGithub className="text-2xl "/>
+              <a
+                href="https://github.com/mhkhizil"
+                target="_blank"
+                className="h-16 w-16 rounded-full transition duration-500 border text-white hover:text-black hover:bg-white border-dark flex justify-center items-center shadow"
+              >
+                <ImGithub className="text-2xl " />
               </a>
-              <a href="https://www.linkedin.com/in/thurein-zaw-62ab73291/" target='_blank' className='h-16 w-16 rounded-full border border-dark text-white hover:text-black hover:bg-white transition duration-500 flex justify-center items-center shadow'>
-                <ImLinkedin className="text-2xl "/>
+              <a
+                href="https://www.linkedin.com/in/thurein-zaw-62ab73291/"
+                target="_blank"
+                className="h-16 w-16 rounded-full border border-dark text-white hover:text-black hover:bg-white transition duration-500 flex justify-center items-center shadow"
+              >
+                <ImLinkedin className="text-2xl " />
               </a>
             </div>
             <div className="flex items-end justify-between mt-auto">
@@ -324,7 +308,7 @@ const Home = () => {
                 </h4>
                 <h1 className="text-white text-xl font-medium mt-1">Profile</h1>
               </div>
-              <Link to={'/contact'} className="">
+              <Link to={"/contact"} className="">
                 <img
                   src={icon}
                   className="opacity-50 group-hover:opacity-100 duration-[.4s]"
@@ -403,6 +387,5 @@ const Home = () => {
     </>
   );
 };
-
 
 export default Home;

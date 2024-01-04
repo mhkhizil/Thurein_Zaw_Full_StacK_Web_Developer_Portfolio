@@ -79,7 +79,7 @@ const Work = () => {
               </Link>
             </div>
 
-            <div className=' grid gap-5 col-span-2'>
+            <div className='z-40 grid gap-5 col-span-2'>
               <motion.div
                initial={{ scale: 0.7 }}
                whileInView={{ scale: 1 }}

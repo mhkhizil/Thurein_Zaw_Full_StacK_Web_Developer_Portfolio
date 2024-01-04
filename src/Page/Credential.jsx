@@ -77,7 +77,7 @@ const Credential = () => {
           </div>
         </div>
 
-        <div className="basis-2/3">
+        <div className="z-40 basis-2/3">
           <div className="about">
             <h1 className="c uppercase text-white text-xl font-medium">
               about me
@@ -310,90 +310,92 @@ const Credential = () => {
             </p>
           </div>
 
-          <div className="skills mt-10">
-            <h1 className="c uppercase text-white text-xl font-medium">
+          <div className="skills mt-10 ">
+         <div className="z-40">
+         <span className=" z-40 uppercase text-white text-xl font-medium">
               Technologies
-            </h1>
-            <div className="flex items-center justify-between flex-wrap gap-y-6 mt-8">
-              <div className="basis-1/2">
+            </span>
+         </div>
+            <div className=" z-40 flex items-center justify-between flex-wrap gap-y-6 mt-8">
+              <div className="basis-1/2 z-40">
                 <span className="text-white opacity-40">100%</span>
-                <h4 className="text-white text-lg font-normal uppercase">
+                <h4 className="text-white text-lg font-normal uppercase z-40"  >
                   html
                 </h4>
               </div>
-              <div className="basis-1/2">
+              <div className="basis-1/2 z-40">
                 <span className="text-white opacity-40">90%</span>
                 <h4 className="text-white text-lg font-normal uppercase">
                   css
                 </h4>
               </div>
-              <div className="basis-1/2">
+              <div className="basis-1/2 z-40">
                 <span className="text-white opacity-40">80%</span>
                 <h4 className="text-white text-lg font-normal uppercase">
                   javascript
                 </h4>
               </div>
-              <div className="basis-1/2">
+              <div className="basis-1/2 z-40">
                 <span className="text-white opacity-40">80%</span>
                 <h4 className="text-white text-lg font-normal uppercase">
                   react
                 </h4>
               </div>
-              <div className="basis-1/2">
+              <div className="basis-1/2 z-40">
                 <span className="text-white opacity-40">90%</span>
                 <h4 className="text-white text-lg font-normal uppercase">
                   tailwind
                 </h4>
               </div>
-              <div className="basis-1/2">
+              <div className="basis-1/2 z-40">
                 <span className="text-white opacity-40">95%</span>
                 <h4 className="text-white text-lg font-normal uppercase">
                   bootstrap
                 </h4>
               </div>
-              <div className="basis-1/2">
-                <span className="text-white opacity-40">20%</span>
+              <div className="basis-1/2 z-40">
+                <span className="text-white opacity-40">80%</span>
                 <h4 className="text-white text-lg font-normal uppercase">
                   php
                 </h4>
               </div>
-              <div className="basis-1/2">
-                <span className="text-white opacity-40">5%</span>
+              <div className="basis-1/2 z-40">
+                <span className="text-white opacity-40">95%</span>
                 <h4 className="text-white text-lg font-normal uppercase">
                   laravel
                 </h4>
               </div>
-              <div className="basis-1/2">
+              <div className="basis-1/2 z-40">
                 <span className="text-white opacity-40">30%</span>
                 <h4 className="text-white text-lg font-normal uppercase">
                   Java
                 </h4>
               </div>
-              <div className="basis-1/2">
+              <div className="basis-1/2 z-40">
                 <span className="text-white opacity-40">25%</span>
                 <h4 className="text-white text-lg font-normal uppercase">
                   Flutter
                 </h4>
               </div>
-              <div className="basis-1/2">
+              <div className="basis-1/2 z-40">
                 <span className="text-white opacity-40">70%</span>
                 <h4 className="text-white text-lg font-normal uppercase">
                   RTK
                 </h4>
               </div>
-              <div className="basis-1/2">
+              <div className="basis-1/2 z-40">
                 <span className="text-white opacity-40">15%</span>
                 <h4 className="text-white text-lg font-normal uppercase">
                   Dart
                 </h4>
               </div>
-              <div className="basis-1/2">
+              <div className="basis-1/2 z-40">
                 <span className="text-white opacity-40">5%</span>
                 <h4 className="text-white text-lg font-normal uppercase">
                   VB.NET
                 </h4>
               </div>
-              <div className="basis-1/2">
+              <div className="basis-1/2 z-40">
                 <span className="text-white opacity-40">25%</span>
                 <h4 className="text-white text-lg font-normal uppercase">
                   MYSQL

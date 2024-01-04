@@ -76,7 +76,7 @@ const Navbar = () => {
         }}
 
          
-          className={`navbar fixed w-screen z-[999] top-0 left-0 bg-white`}>
+          className={`navbar fixed w-screen z-[999] top-0 left-0 bg-black`}>
           <ul className={'md:hidden md:opacity-0 md:z-[-999] flex flex-col items-center justify-center gap-4 pt-20 pb-6 text-gray '}>
             <li className=''>
               <NavLink to={'/'} aria-current="page" className="transition duration-300 px-4 py-2">Home</NavLink>

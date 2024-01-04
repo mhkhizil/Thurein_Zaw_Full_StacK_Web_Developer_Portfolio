@@ -33,7 +33,7 @@ const Offering = () => {
         }}
         className="xl:container xl:mx-auto min-h-screen px-[1rem] md:px-[2rem]  xl:px-[4.5rem] pt-23 pb-20"
       >
-        <section className="grid grid-cols-1 md:grid-cols-3  md:items-start gap-5">
+        <section className="grid grid-cols-1 md:grid-cols-3  md:items-start gap-4">
           <motion.div
             initial={{ x: "-50%" }}
             animate={{ x: 0 }}
@@ -71,18 +71,18 @@ const Offering = () => {
             }}
             className="col-span-2"
           >
-            <h1 className="mb-10 lg:mb-4 text-3xl lg:text-5xl xl:text-7xl uppercase font-medium flex items-center justify-center gap-1.5 text-white  ">
+            <h1 className="mb-10 z-40 lg:mb-4 text-3xl lg:text-5xl xl:text-7xl uppercase font-medium flex items-center justify-center gap-1.5 text-white  ">
               <img
                 src={star}
                 alt=""
-                className="w-6 xl:w-16"
+                className="w-6 xl:w-16 z-40"
                 aria-hidden="true"
               />{" "}
-              my offerings{" "}
+            <span className="z-40">  my offerings</span>
               <img
                 src={star}
                 alt=""
-                className="w-6 xl:w-16"
+                className="w-6 xl:w-16 z-40"
                 aria-hidden="true"
               />
             </h1>

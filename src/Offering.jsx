@@ -33,7 +33,7 @@ const Offering = () => {
         }}
         className="xl:container xl:mx-auto min-h-screen px-[1rem] md:px-[2rem]  xl:px-[4.5rem] pt-23 pb-20"
       >
-        <section className="grid grid-cols-1 md:grid-cols-3  md:items-start gap-4">
+        <section className="grid grid-cols-1 md:grid-cols-3  md:items-start gap-4 ">
           <motion.div
             initial={{ x: "-50%" }}
             animate={{ x: 0 }}
@@ -41,9 +41,9 @@ const Offering = () => {
               duration: 0.8,
               delay: loader ? 0.5 : 0,
             }}
-            className="py-13 sm:py-0 px-6 box bg-card-bg rounded-4xl max-h-screen my-6 "
+            className="py-13 sm:py-0 px-6 box bg-card-bg rounded-4xl max-h-screen my-6 overflow-hidden "
           >
-            <ul className="grid grid-rows-4 uxsm:gap-40 uxxsm:gap-10 col-span-1 my-12">
+            <ul className="grid grid-rows-5 uxsm:gap-40 uxxsm:gap-10 col-span-1 my-12 ">
               <li className="text-white uppercase flex items-center justify-center md:justify-start">
                 <MdOutlineDeveloperMode className="text-3xl mr-8 lg:mr-14" />{" "}
                 development
